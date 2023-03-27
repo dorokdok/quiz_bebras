@@ -74,7 +74,7 @@ List<Question> questions = [
       Pertanyaan: Sepuluh bola bergelinding seperti pada gambar. Terdapat lubang A, B, dan C yang memiliki ruang kosong cukup untuk 
       bola 3, 2, dan 1. Urutan pin ditarik adalah A, B, C, tetapi hanya ketika smeua bola sudah berhenti menggelinding. Yang manakah 
       hasil akhirnya? (Gambar pertama dari kiri)",
-      "assets/soal/level9/SS108-109.png", {
+      "assets/soal/level8/SS108-109.png", {
     "7,8,9,10,1,2,3,5,4,6": false,
     "10,9,8,7,6,5,4,3,2,1": false,
     "7,8,9,10,1,2,3,4,5,6": false,

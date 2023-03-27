@@ -84,9 +84,9 @@ List<Question> questions = [
       dilaksanakan sebelum acara selanjutnya. Contohnya, Musical Intermezzo hanya dapat terjadi setelah Drum Ruffle dan Boring Speeches sudah selesai.
       Pertanyaan: Acara apa yang dilaksanakan di awal festival?"
       "assets/soal/level6/SS86-87.png", {
-    "Thank you": true,
     "Lottery": false,
-    "Fanfare": false,
+    "Boring Speeches": false,
+    "Choir Singing": true
     "Fireworks": false,
   }),
 ];

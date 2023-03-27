@@ -88,7 +88,7 @@ List<Question> questions = [
       beberapa kali pertukaran tempat, sehingga tiga anjing besar akan berdiri dalam tiga posisi
       yang bersebelahan.
       Pertanyaan: Berapakah banyaknya pertukaran sesedikit mungkin yang diperlukan?",
-      "assets/soal/level10/SS90-93.png", {
+      "assets/soal/level7/SS90-93.png", {
     "7": false,
     "5": false,
     "8": false,

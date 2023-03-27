@@ -67,20 +67,20 @@ List<Question> questions = [
   //   "Rocketonia": false,
   // }),
 
-  // //SS82-83
-  // Question("Di sebuah gudang terdapat sebuah tim yang terdiri dari tiga robot. Ketika tim diberikan instruksi 
-  //     (N, S, E, W), semua robot akan bergerak satu kotak sesuai dengan perintah. 
-  //     Setelah mengikuti sederet perintah, mereka akan mengangkat benda yang mereka temukan di kotak terakhir. 
-  //     Contohnya, jika kita memberi perintah N, N, S, S, E pada mereka, maka robot A akan mengangkat kerucut, 
-  //     robot B mengangkat cincin, dan robot C mengangkat
-  //     kerucut.
-  //     Pertanyaan: Deretan perintah apa yang akan menyebabkan para robot mengangkat bola, kerucut, dan cincin?",
-  //     "assets/soal/level9/SS82-83.png", {
-  //   "N, E, E, E": false,
-  //   "N, E, E, S, E": true,
-  //   "N, N, S, E, N": false,
-  //   "N, E, E, S, W": false,
-  // }),
+  //SS82-83
+  Question("Di sebuah gudang terdapat sebuah tim yang terdiri dari tiga robot. Ketika tim diberikan instruksi 
+      (N, S, E, W), semua robot akan bergerak satu kotak sesuai dengan perintah. 
+      Setelah mengikuti sederet perintah, mereka akan mengangkat benda yang mereka temukan di kotak terakhir. 
+      Contohnya, jika kita memberi perintah N, N, S, S, E pada mereka, maka robot A akan mengangkat kerucut, 
+      robot B mengangkat cincin, dan robot C mengangkat
+      kerucut.
+      Pertanyaan: Deretan perintah apa yang akan menyebabkan para robot mengangkat bola, kerucut, dan cincin?",
+      "assets/soal/level9/SS82-83.png", {
+    "N, E, E, E": false,
+    "N, E, E, S, E": true,
+    "N, N, S, E, N": false,
+    "N, E, E, S, W": false,
+  }),
 
   //SS106-107
   Question("Pada suatu pagi yang cerah tiga sekawan, seekor kelinci, seekor kodok, dan seekor kangguru, bertanding 
