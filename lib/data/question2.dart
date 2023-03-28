@@ -67,7 +67,7 @@ List<Question> questions = [
   //   "Rocketonia": false,
   // }),
 
-  // SS94-95
+  // SS94-95, 1
   Question("Berang-berang menanam bunga dalam 3 barisan, di setiap barisan ada 4 bunga.
       Berang-berang ingin agar bunga putih lebih dekat ke pagar daripada bunga biru.
       Pertanyaan: Baris mana yang memenuhi keinginan berang-berang?",

@@ -67,7 +67,7 @@ List<Question> questions = [
   //   "Rocketonia": false,
   // }),
 
-  // SS75-78
+  // SS75-78, 1
   Question("Bob si berang-berang telah mengatur meja sarapan seperti yang ditunjukkin pada gambar, 
       termasuk taplak meja(1), serbet(2), cangkir(3), pisau(4), dan piring(5).
       Dalam urutan apa dia meletakan benda-benda di atas meja?",
@@ -77,8 +77,7 @@ List<Question> questions = [
     "1-3-2-4-5": false,
     "1-2-3-5-4":false,
   }),
-
-  // SS84-85
+  // SS84-85, 2
   Question("Terdapat 12 tempat untuk parkir mobil di area parkir. Setiap tempat diberi nomor. Gambar di bawah ini menunjukkan
       kondisi area parkir pada hari Senin dan kondisi pada hari Selasa.
       Mobil yang parkir pada hari Senin maupun pada hari Selasa pasti akan parkir di tempat seperti pada di gambar.
@@ -89,8 +88,7 @@ List<Question> questions = [
     "6": false,
     "4": true,
   }),
-
-  // SS98-99
+  // SS98-99, 3
   Question("Jeni si berang-berang cantik, pergi ke sekolah dengan berjalan kaki. Peta jalan yang dapat dilalui dari rumah ke sekolah
       adalah seperti pada gambar. Jeni senang menempuh jalur yang berbeda-beda setiap hari. Dia hanya berjalan sepanjang jalan yang tersedia
       seperti pada gambar. Jalan yang Jeni gunakan pasti selalu mengarah ke sekolah. Artinya Jeni tidak akan menggunakan jalan yang menjauhi
@@ -102,8 +100,7 @@ List<Question> questions = [
     "4": false,
     "3": true,
   }),
-
-  // SS102-103
+  // SS102-103, 4
   Question("Beri si berang-berang dari Perancis sedang senang memakai kaos yang ada logo gambar dirinya.
       Dia ingin memakai warna yang berbeda-beda, berganti setiap hari, seperti warna pada bendera Perancis.
       Hari ini dia memakai kaos warna biru, besok akan memakai warna putih, dan lusa akan memakai warna merah.
@@ -113,6 +110,16 @@ List<Question> questions = [
     "Biru": true,
     "Merah": false,
     "Merah dan Putih": false,
+  }),
+  // SS122-123, 5
+  Question("Ada banyak berang-berang yang ingin menggunakan kedua elevator ini. Namun tiap elevator hanya dapat 
+      mengangkat maksimal 30 kg.
+      Pertanyaan: Berapa jumlah maksimal berang-berang yang dapat ditampung kedua lift dalam waktu bersamaan?",
+      "assets/soal/level3/SS122-123.png", {
+    "5": false,
+    "8": true,
+    "7": false,
+    "6": false,
   }),
 
 ];

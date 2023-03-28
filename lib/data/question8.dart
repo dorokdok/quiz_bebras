@@ -67,7 +67,7 @@ List<Question> questions = [
   //   "Rocketonia": false,
   // }),
 
-  //SS108-109
+  //SS108-109, 1
   Question("Beberapa bola menggelindingi lereng. Urutan bola berubah ketika mereka jatuh ke lubang. ketika sebuah bola mendatangi 
       lubang, jika terdapat cukup ruang, bola akan jatuh. Jika tidak, bola akan melewati lubang tersebut. Sebuah pin di dasar lubang 
       bisa ditarik untuk mengeluarkan bola-bola didalamnya.

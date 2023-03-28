@@ -67,26 +67,41 @@ List<Question> questions = [
   //   "Rocketonia": false,
   // }),
 
-  // SS79
+  // SS79, 1
   Question("Mengatur festival di Kota Bebras merupakan pekerjaan berat. Semua acara harus terjadi dengan urutan tertentu.
       Diagram di bawah menunjukkan semua acara yang harus ada di festival. Tanda panah menunjukkan bahwa suatu acara harus
-      dilaksanakan sebelum acara selanjutnya. Contohnya, Musical Intermezzo hanya dapat terjadi setelah Drum Ruffle dan Boring Speeches sudah selesai.
-      Pertanyaan: Acara apa yang dilaksanakan di akhir festival?"
+      dilaksanakan sebelum acara selanjutnya. Contohnya, Musical Intermezzo hanya dapat terjadi setelah Drum Ruffle dan Boring 
+      Speeches sudah selesai.
+      Pertanyaan: Acara apa yang dilaksanakan di akhir festival?",
       "assets/soal/level6/SS79.png", {
     "Thank you": true,
     "Lottery": false,
     "Fanfare": false,
     "Fireworks": false,
   }),
-  // SS86-87
+  // SS86-87, 2
   Question("Mengatur festival di Kota Bebras merupakan pekerjaan berat. Semua acara harus terjadi dengan urutan tertentu.
       Diagram di bawah menunjukkan semua acara yang harus ada di festival. Tanda panah menunjukkan bahwa suatu acara harus
-      dilaksanakan sebelum acara selanjutnya. Contohnya, Musical Intermezzo hanya dapat terjadi setelah Drum Ruffle dan Boring Speeches sudah selesai.
-      Pertanyaan: Acara apa yang dilaksanakan di awal festival?"
+      dilaksanakan sebelum acara selanjutnya. Contohnya, Musical Intermezzo hanya dapat terjadi setelah Drum Ruffle dan Boring 
+      Speeches sudah selesai.
+      Pertanyaan: Acara apa yang dilaksanakan di awal festival?",
       "assets/soal/level6/SS86-87.png", {
     "Lottery": false,
     "Boring Speeches": false,
-    "Choir Singing": true
+    "Choir Singing": true,
     "Fireworks": false,
   }),
+  // SS110-111, 3
+  Question("Sebuah boneka bersarang adalah sekumpulan boneka kayu, dimana satu boneka dapat dimasukkan ke dalam boneka lainnya. 
+      Setiap boneka dapat dibuka tutupnya, untuk melihat boneka lebih kecil (ukuran tinggi dan lebarnya) yang ada di dalamnya.
+      Pada gambar berikut adalah aturan sekaligus semua boneka yang dipunyai Emili. Dia ingin menyusun boneka-boneka, sehingga dapat 
+      dimasukkan menjadi satu, sebanyak-banyaknya. 
+      Pertanyaan: Berapa banyak boneka yang dapat disusun oleh Emili?",
+      "assets/soal/level6/SS110-111.png", {
+    "4": true,
+    "6": false,
+    "3": false,
+    "5": false,
+  }),
 ];
+

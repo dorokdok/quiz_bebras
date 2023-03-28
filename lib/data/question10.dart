@@ -67,7 +67,7 @@ List<Question> questions = [
   //   "Rocketonia": false,
   // }),
 
-  // SS88-89
+  // SS88-89, 1
   Question("Tiga berang-berang yang cepat akan melakukan lomba lari. Mr. Brown akan mendahului salah satu berang-berang 
      ketika berlari ke atas bukit. Mrs. Pink akan mendahului salah satu berang-berang ketika menuruni bukit. Mrs. Green 
      akan mendahului salah satu berang-berang ketika melewati bebatuan.
@@ -80,8 +80,7 @@ List<Question> questions = [
     "Mr. Brown, Mrs. Green, Mrs. Pink": true,
     "Mrs. Green, Mr. Brown, Mrs. Pink": false,
   }),
-
-  // SS100-101
+  // SS100-101, 2
   Question("Anggota klub komputer perempuan sedang merencanakan perjalan akhir pekan. Mereka akan bermalam di penginapan 
       dengan ruangan-ruangan besar, maksimal menampung enam tamu. Namun siapa yang akan berbagi ruangan dengan siapa?
       Tiap perempuan menuliskan permintaannya dalam sebuah kartu: 
@@ -95,8 +94,7 @@ List<Question> questions = [
     "Alina": false,
     "Lara": true,
   }),
-
-  // SS104-105
+  // SS104-105, 3
   Question("Guru-guru di sekolah hendak mengadakan sebuah permainan di sekolah. 
       Suatu hari, salah satu guru mengajak murid-muridnya untuk bermain. Yang menang diperbolehkan pulang terlebih dahulu. 
       Aturan permainan: 
@@ -112,6 +110,15 @@ List<Question> questions = [
     "10": false,
     "22": true,
     "24": false,
+  }),
+  // SS117-119, 4
+  Question("Hiasan pohon Natal harus ditempatkan dalam kotak dengan aturan seperti di gambar. 
+      Pertanyaan: Hiasan apa yang tidak bisa ditempatkan di keempat kotak yang ada pada gambar?",
+      "assets/soal/level10/SS117-119.png", {
+    "1": true,
+    "2": false,
+    "3": false,
+    "4": false,
   }),
 
   

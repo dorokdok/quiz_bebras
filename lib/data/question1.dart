@@ -67,9 +67,9 @@ List<Question> questions = [
   //   "Rocketonia": false,
   // }),
 
-  // SS73-74
+  // SS73-74, 1
   Question("Cows are natural herbivores, they usually drink ____.", 
-      "null" {
+      "null", {
     "Milk": false,
     "Water": true,
     "Tea": false,

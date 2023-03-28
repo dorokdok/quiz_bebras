@@ -67,7 +67,7 @@ List<Question> questions = [
   //   "Rocketonia": false,
   // }),
 
-  //SS82-83
+  //SS82-83, 1
   Question("Di sebuah gudang terdapat sebuah tim yang terdiri dari tiga robot. Ketika tim diberikan instruksi 
       (N, S, E, W), semua robot akan bergerak satu kotak sesuai dengan perintah. 
       Setelah mengikuti sederet perintah, mereka akan mengangkat benda yang mereka temukan di kotak terakhir. 
@@ -81,8 +81,7 @@ List<Question> questions = [
     "N, N, S, E, N": false,
     "N, E, E, S, W": false,
   }),
-
-  //SS106-107
+  //SS106-107, 2
   Question("Pada suatu pagi yang cerah tiga sekawan, seekor kelinci, seekor kodok, dan seekor kangguru, bertanding 
       dalam suatu lomba melompat (hopping race). Lintasannya merupakan keliling suatu lingkaran dengan 15 posisi langkah. 
       Posisi langkah itu di nomori dari 0-14. Setiap kali siapapun yang mencapai atau melalui posisi 14, posisi 

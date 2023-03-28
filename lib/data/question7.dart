@@ -67,7 +67,7 @@ List<Question> questions = [
   //   "Rocketonia": false,
   // }),
 
-  // SS80-81
+  // SS80-81, 1
   Question("Toko donat di desa Bebras dapat membuat 1 donat setiap 2 menit. Ada antrian di depan toko,
       pelanggan dilayani satu-persatu. Setiap pelanggan ingin membeli sejumlah donat. Saking larisnya,
       setiap orang hanya boleh membeli 3 donat pada suatu saat. Jika ingin membeli lebih, harus antri
@@ -82,7 +82,7 @@ List<Question> questions = [
     "12": false,
   }),
 
-  // SS90-93
+  // SS90-93, 2
   Question("Terdapat dua jenis anjing yang berbaris seperti tampak dalam gambar. Suatu 
       pertukaran dapat terjadi antara dua anjing yang berdiri bersebelahan. Akan dilakukan 
       beberapa kali pertukaran tempat, sehingga tiga anjing besar akan berdiri dalam tiga posisi
