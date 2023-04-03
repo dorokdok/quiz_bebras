@@ -68,14 +68,9 @@ List<Question> questions = [
   // }),
 
   // SS80-81, 1
-  Question("Toko donat di desa Bebras dapat membuat 1 donat setiap 2 menit. Ada antrian di depan toko,
-      pelanggan dilayani satu-persatu. Setiap pelanggan ingin membeli sejumlah donat. Saking larisnya,
-      setiap orang hanya boleh membeli 3 donat pada suatu saat. Jika ingin membeli lebih, harus antri
-      belakang. Toko donat dibuka dan mulai membuat donat pada pukul 7 pagi, dan sudah ada 3 bebras 
-      yang antri: yang pertama adalah Ali ingin membeli 7 donat, kedua adalah Bilgin ingin membeli 3 
-      donat, dan yang terkahir adalah Yasemin ingin membeli 5 donat. Berapa menit setelah toko buka, 
-      Yasemin akan dilayani dan mendapat semua donat yang ingin dibelinya?",
-      "assets/soal/level7/SS80-81.png", {
+  Question(
+      "Toko donat di desa Bebras dapat membuat 1 donat setiap 2 menit. Ada antrian di depan toko, pelanggan dilayani satu-persatu. Setiap pelanggan ingin membeli sejumlah donat. Saking larisnya, setiap orang hanya boleh membeli 3 donat pada suatu saat. Jika ingin membeli lebih, harus antri belakang. Toko donat dibuka dan mulai membuat donat pada pukul 7 pagi, dan sudah ada 3 bebras yang antri: yang pertama adalah Ali ingin membeli 7 donat, kedua adalah Bilgin ingin membeli 3 donat, dan yang terkahir adalah Yasemin ingin membeli 5 donat. Berapa menit setelah toko buka, Yasemin akan dilayani dan mendapat semua donat yang ingin dibelinya?",
+      "assets/soal/SS80-81.png", {
     "28": false,
     "10": false,
     "30": true,
@@ -83,12 +78,9 @@ List<Question> questions = [
   }),
 
   // SS90-93, 2
-  Question("Terdapat dua jenis anjing yang berbaris seperti tampak dalam gambar. Suatu 
-      pertukaran dapat terjadi antara dua anjing yang berdiri bersebelahan. Akan dilakukan 
-      beberapa kali pertukaran tempat, sehingga tiga anjing besar akan berdiri dalam tiga posisi
-      yang bersebelahan.
-      Pertanyaan: Berapakah banyaknya pertukaran sesedikit mungkin yang diperlukan?",
-      "assets/soal/level7/SS90-93.png", {
+  Question(
+      "Terdapat dua jenis anjing yang berbaris seperti tampak dalam gambar. Suatu pertukaran dapat terjadi antara dua anjing yang berdiri bersebelahan. Akan dilakukan beberapa kali pertukaran tempat, sehingga tiga anjing besar akan berdiri dalam tiga posisi yang bersebelahan. Pertanyaan: Berapakah banyaknya pertukaran sesedikit mungkin yang diperlukan?",
+      "assets/soal/SS90-93.png", {
     "7": false,
     "5": false,
     "8": false,

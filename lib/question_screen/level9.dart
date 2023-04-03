@@ -62,23 +62,20 @@ class _quiz9State extends State<quiz9> {
                   Divider(
                     color: Colors.white,
                   ),
-                  SizedBox(
-                    height: 10.0,
-                  ),
                   if (questions[index].img != "null")
                     Image.asset(
                       questions[index].img,
-                      width: 300,
-                      height: 300,
+                      width: 250,
+                      height: 200,
                     ),
                   SizedBox(
                     width: double.infinity,
-                    height: 100.0,
+                    height: 190.0,
                     child: Text(
                       "${questions[index].question} ",
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: 22.0,
+                        fontSize: 16.0,
                       ),
                     ),
                   ),

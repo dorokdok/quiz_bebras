@@ -68,34 +68,25 @@ List<Question> questions = [
   // }),
 
   //SS82-83, 1
-  Question("Di sebuah gudang terdapat sebuah tim yang terdiri dari tiga robot. Ketika tim diberikan instruksi 
-      (N, S, E, W), semua robot akan bergerak satu kotak sesuai dengan perintah. 
-      Setelah mengikuti sederet perintah, mereka akan mengangkat benda yang mereka temukan di kotak terakhir. 
-      Contohnya, jika kita memberi perintah N, N, S, S, E pada mereka, maka robot A akan mengangkat kerucut, 
-      robot B mengangkat cincin, dan robot C mengangkat
-      kerucut.
-      Pertanyaan: Deretan perintah apa yang akan menyebabkan para robot mengangkat bola, kerucut, dan cincin?",
-      "assets/soal/level9/SS82-83.png", {
+  Question(
+      "Di sebuah gudang terdapat sebuah tim yang terdiri dari tiga robot. Ketika tim diberikan instruksi (N, S, E, W), semua robot akan bergerak satu kotak sesuai dengan perintah. Setelah mengikuti sederet perintah, mereka akan mengangkat benda yang mereka temukan di kotak terakhir. Contohnya, jika kita memberi perintah N, N, S, S, E pada mereka, maka robot A akan mengangkat kerucut, robot B mengangkat cincin, dan robot C mengangkatkerucut. Pertanyaan: Deretan perintah apa yang akan menyebabkan para robot mengangkat bola, kerucut, dan cincin?",
+      "assets/soal/SS82-83.png", {
     "N, E, E, E": false,
     "N, E, E, S, E": true,
     "N, N, S, E, N": false,
     "N, E, E, S, W": false,
   }),
   //SS106-107, 2
-  Question("Pada suatu pagi yang cerah tiga sekawan, seekor kelinci, seekor kodok, dan seekor kangguru, bertanding 
-      dalam suatu lomba melompat (hopping race). Lintasannya merupakan keliling suatu lingkaran dengan 15 posisi langkah. 
-      Posisi langkah itu di nomori dari 0-14. Setiap kali siapapun yang mencapai atau melalui posisi 14, posisi 
-      berikutnya adalah 0.
-      Berang-berang, yang kini menjadi wasitnya, akan meniupkan peluit setiap detik selama perlombaan. Pada setiap peniupan 
-      peluit, kelinci dapat melompat tepat 3 posisi berikutnya, kodok melompat tepat 2 posisi berikutnya, dan kangguru melompat 
-      tepat 5 posisi berikutnya.
-      Di awal lomba semua memulai pada posisi 0.
-      Pertanyaan: Setelah beberapa kali peniupan peluit, dimanakah posisi berturut-turut posisi kelinci, posisi kodok, dan posisi 
-      kangguru yang salah?",
-      "assets/soal/level9/SS106-107.png", {
-    "Peniupan ke-2: kelinci di posisi 6, kodok di posisi 4, dan kangguru di posisi 10": false,
-    "Peniupan ke-1: kelinci di posisi 3, kodok di posisi 2, dan kangguru di posisi 5": false,
-    "Peniupan ke-3: kelinci di posisi 8, kodok di posisi 6, dan kangguru di posisi 0": true,
-    "Peniupan ke-4: kelinci di posisi 12, kodok di posisi 8, dan kangguru di posisi 5": false,
+  Question(
+      "Pada suatu pagi yang cerah tiga sekawan, seekor kelinci, seekor kodok, dan seekor kangguru, bertanding dalam suatu lomba melompat (hopping race). Lintasannya merupakan keliling suatu lingkaran dengan 15 posisi langkah. Posisi langkah itu di nomori dari 0-14. Setiap kali siapapun yang mencapai atau melalui posisi 14, posisi berikutnya adalah 0.Berang-berang, yang kini menjadi wasitnya, akan meniupkan peluit setiap detik selama perlombaan. Pada setiap peniupan peluit, kelinci dapat melompat tepat 3 posisi berikutnya, kodok melompat tepat 2 posisi berikutnya, dan kangguru melompat tepat 5 posisi berikutnya.Di awal lomba semua memulai pada posisi 0.Pertanyaan: Setelah beberapa kali peniupan peluit, dimanakah posisi berturut-turut posisi kelinci, posisi kodok, dan posisi kangguru yang salah?",
+      "assets/soal/SS106-107.png", {
+    "Peniupan ke-2: kelinci di posisi 6, kodok di posisi 4, dan kangguru di posisi 10":
+        false,
+    "Peniupan ke-1: kelinci di posisi 3, kodok di posisi 2, dan kangguru di posisi 5":
+        false,
+    "Peniupan ke-3: kelinci di posisi 8, kodok di posisi 6, dan kangguru di posisi 0":
+        true,
+    "Peniupan ke-4: kelinci di posisi 12, kodok di posisi 8, dan kangguru di posisi 5":
+        false,
   }),
 ];

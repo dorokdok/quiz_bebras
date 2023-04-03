@@ -68,17 +68,17 @@ class _quizState extends State<quiz> {
                   if (questions[index].img != "null")
                     Image.asset(
                       questions[index].img,
-                      width: 500,
+                      width: 250,
                       height: 200,
                     ),
                   SizedBox(
                     width: double.infinity,
-                    height: 100.0,
+                    height: 190.0,
                     child: Text(
                       "${questions[index].question} ",
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: 22.0,
+                        fontSize: 16.0,
                       ),
                     ),
                   ),

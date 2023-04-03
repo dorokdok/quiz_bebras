@@ -68,43 +68,26 @@ List<Question> questions = [
   // }),
 
   // SS88-89, 1
-  Question("Tiga berang-berang yang cepat akan melakukan lomba lari. Mr. Brown akan mendahului salah satu berang-berang 
-     ketika berlari ke atas bukit. Mrs. Pink akan mendahului salah satu berang-berang ketika menuruni bukit. Mrs. Green 
-     akan mendahului salah satu berang-berang ketika melewati bebatuan.
-     Tempat mereka berlomba seperti di gambar: menaiki bukit, melewati bebatuan, menuruni bukit, kemudian melewati bebatuan
-     lagi. Mrs. Pink memulai di posisi terdepan, diikuti Mr. Brown kemudian Mrs. Green.
-     Pertanyaan: Seperti apa urutan para pemenang pertama hingga ketiga?",
-      "assets/soal/level10/SS88-89.png", {
+  Question(
+      "Tiga berang-berang yang cepat akan melakukan lomba lari. Mr. Brown akan mendahului salah satu berang-berang ketika berlari ke atas bukit. Mrs. Pink akan mendahului salah satu berang-berang ketika menuruni bukit. Mrs. Green akan mendahului salah satu berang-berang ketika melewati bebatuan.Tempat mereka berlomba seperti di gambar: menaiki bukit, melewati bebatuan, menuruni bukit, kemudian melewati bebatuan lagi. Mrs. Pink memulai di posisi terdepan, diikuti Mr. Brown kemudian Mrs. Green. Pertanyaan: Seperti apa urutan para pemenang pertama hingga ketiga?",
+      "assets/soal/SS88-89.png", {
     "Mrs. Green, Mrs. Pink, Mr. Brown": false,
     "Mrs. Pink, Mr. Brown, Mrs. Green": false,
     "Mr. Brown, Mrs. Green, Mrs. Pink": true,
     "Mrs. Green, Mr. Brown, Mrs. Pink": false,
   }),
   // SS100-101, 2
-  Question("Anggota klub komputer perempuan sedang merencanakan perjalan akhir pekan. Mereka akan bermalam di penginapan 
-      dengan ruangan-ruangan besar, maksimal menampung enam tamu. Namun siapa yang akan berbagi ruangan dengan siapa?
-      Tiap perempuan menuliskan permintaannya dalam sebuah kartu: 
-      - Perempuan lain yang sangat ingin ia ajak sekamar(+) 
-      - Perempuan lain yang sangat tidak ingin ia ajak sekamar(-) 
-      Sang ketua ingin semua anggotanya senang. Jadi ia harus memenuhi pemintaan smeua anggotanya.
-      Pertanyaan: Siapa yang akan menginap sendirian di salah satu kamar?",
-      "assets/soal/level10/SS100-101.png", {
+  Question(
+      "Anggota klub komputer perempuan sedang merencanakan perjalan akhir pekan. Mereka akan bermalam di penginapan dengan ruangan-ruangan besar, maksimal menampung enam tamu. Namun siapa yang akan berbagi ruangan dengan siapa?Tiap perempuan menuliskan permintaannya dalam sebuah kartu: 1 Perempuan lain yang sangat ingin ia ajak sekamar(+), 2 Perempuan lain yang sangat tidak ingin ia ajak sekamar(-) Sang ketua ingin semua anggotanya senang. Jadi ia harus memenuhi pemintaan smeua anggotanya.Pertanyaan: Siapa yang akan menginap sendirian di salah satu kamar?",
+      "assets/soal/SS100-101.png", {
     "Zoe": false,
     "Emma": false,
     "Alina": false,
     "Lara": true,
   }),
   // SS104-105, 3
-  Question("Guru-guru di sekolah hendak mengadakan sebuah permainan di sekolah. 
-      Suatu hari, salah satu guru mengajak murid-muridnya untuk bermain. Yang menang diperbolehkan pulang terlebih dahulu. 
-      Aturan permainan: 
-      Terdapat sebuah koridor dengan 5 pintu berjejer disisinya. Para murid membuat sebuah barisan dan berjalan bergiliran 
-      melewati pintu-pintunya. Ketika mereka berhadapan dengan pintu yang terbuka, mereka harus menutup pintunya dan melanjutkan 
-      perjalanan ke pintu setelahnya. Ketika mereka berhadapan dengan pintu yang tertutup, mereka harus membukanya, kemudian masuk 
-      ke dalam ruangan tersebut, meninggalkan pintunya terbuka dan menunggu hingga seorang guru memperbolehkan mereka keluar. 
-      Di awal permainan semua pintu tertutup. 
-      Jika seorang murid mendapatkan semua pintu terbuka, kemudian menutup semuanya, ia bisa pulang! 
-      Pertanyaan: Jika murid-murid ini diberi nomor dari 1-35, murid mana yang akan pulang pertama?",
+  Question(
+      "Guru-guru di sekolah hendak mengadakan sebuah permainan di sekolah. Suatu hari, salah satu guru mengajak murid-muridnya untuk bermain. Yang menang diperbolehkan pulang terlebih dahulu. Aturan permainan: Terdapat sebuah koridor dengan 5 pintu berjejer disisinya. Para murid membuat sebuah barisan dan berjalan bergiliran melewati pintu-pintunya. Ketika mereka berhadapan dengan pintu yang terbuka, mereka harus menutup pintunya dan melanjutkan perjalanan ke pintu setelahnya. Ketika mereka berhadapan dengan pintu yang tertutup, mereka harus membukanya, kemudian masuk ke dalam ruangan tersebut, meninggalkan pintunya terbuka dan menunggu hingga seorang guru memperbolehkan mereka keluar. Di awal permainan semua pintu tertutup. Jika seorang murid mendapatkan semua pintu terbuka, kemudian menutup semuanya, ia bisa pulang! Pertanyaan: Jika murid-murid ini diberi nomor dari 1-35, murid mana yang akan pulang pertama?",
       "null", {
     "32": false,
     "10": false,
@@ -112,14 +95,12 @@ List<Question> questions = [
     "24": false,
   }),
   // SS117-119, 4
-  Question("Hiasan pohon Natal harus ditempatkan dalam kotak dengan aturan seperti di gambar. 
-      Pertanyaan: Hiasan apa yang tidak bisa ditempatkan di keempat kotak yang ada pada gambar?",
-      "assets/soal/level10/SS117-119.png", {
+  Question(
+      "Hiasan pohon Natal harus ditempatkan dalam kotak dengan aturan seperti di gambar. Pertanyaan: Hiasan apa yang tidak bisa ditempatkan di keempat kotak yang ada pada gambar?",
+      "assets/soal/SS117-119.png", {
     "1": true,
     "2": false,
     "3": false,
     "4": false,
   }),
-
-  
 ];

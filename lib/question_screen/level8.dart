@@ -62,30 +62,27 @@ class _quiz8State extends State<quiz8> {
                   Divider(
                     color: Colors.white,
                   ),
-                  SizedBox(
-                    height: 10.0,
-                  ),
                   if (questions[index].img != "null")
                     Image.asset(
                       questions[index].img,
-                      width: 300,
-                      height: 300,
+                      width: 250,
+                      height: 200,
                     ),
                   SizedBox(
                     width: double.infinity,
-                    height: 100.0,
+                    height: 190.0,
                     child: Text(
                       "${questions[index].question} ",
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: 22.0,
+                        fontSize: 16.0,
                       ),
                     ),
                   ),
                   for (int i = 0; i < questions[index].answers!.length; i++)
                     Container(
                       width: double.infinity,
-                      height: 50.0,
+                      height: 40.0,
                       margin: EdgeInsets.only(
                           bottom: 20.0, left: 12.0, right: 12.0),
                       child: RawMaterialButton(
