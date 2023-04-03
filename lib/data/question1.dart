@@ -146,7 +146,7 @@ List<Question> questions1 = [
     "1-B, 2-A, 3-C, 4-D": false,
   }),
 
-  // SS186-187, 9
+  // SS188-189, 9
   Question(
       "Beri si Berang-Berang Kecil mempunyai 6 stempel. Dia ingin membuat kreasi dengan menyatukan stempel-stempel tersebut. Untuk membuat kreasi itu, Beri ahrus menempel stempel dengan urutan?",
       "assets/soal/SS188-189.png", {
