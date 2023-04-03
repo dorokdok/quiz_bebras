@@ -67,13 +67,22 @@ List<Question> questions2 = [
   //   "Rocketonia": false,
   // }),
 
-  // SS94-95, 1
+  // SS98-99, 1
   Question(
-      "Berang-berang menanam bunga dalam 3 barisan, di setiap barisan ada 4 bunga.Berang-berang ingin agar bunga putih lebih dekat ke pagar daripada bunga biru. Pertanyaan: Baris mana yang memenuhi keinginan berang-berang?",
-      "assets/soal/SS94-95.png", {
-    "Barisan 1 dan 2": false,
-    "Semua barisan": false,
-    "Barisan 1 saja": false,
-    "Barisan 1 dan 3": true,
+      "Jeni si berang-berang cantik, pergi ke sekolah dengan berjalan kaki. Peta jalan yang dapat dilalui dari rumah ke sekolah adalah seperti pada gambar. Jeni senang menempuh jalur yang berbeda-beda setiap hari. Dia hanya berjalan sepanjang jalan yang tersedia seperti pada gambar. Jalan yang Jeni gunakan pasti selalu mengarah ke sekolah. Artinya Jeni tidak akan menggunakan jalan yang menjauhi sekolah. Pertanyaan: Ada berapa banyak jalur yang berbeda yang dapat ditempuh Jeni untuk pergi ke sekolah?",
+      "assets/soal/SS98-99.png", {
+    "2": false,
+    "1": false,
+    "4": false,
+    "3": true,
+  }),
+  // SS102-103, 2
+  Question(
+      "Beri si berang-berang dari Perancis sedang senang memakai kaos yang ada logo gambar dirinya. Dia ingin memakai warna yang berbeda-beda, berganti setiap hari, seperti warna pada bendera Perancis. Hari ini dia memakai kaos warna biru, besok akan memakai warna putih, dan lusa akan memakai warna merah. Pertanyaan: Pada hari ke-10, dia akan memakai warna apa?",
+      "assets/soal/SS102-103.png", {
+    "Putih": false,
+    "Biru": true,
+    "Merah": false,
+    "Merah dan Putih": false,
   }),
 ];
