@@ -1,6 +1,6 @@
 import 'package:quiz_bebras/models/question.dart';
 
-List<Question> questions = [
+List<Question> questions6 = [
   // Question(
   //   "How Many Whiskers does the average cat have on each side of its face ?",
   //   "assets/tes.png",

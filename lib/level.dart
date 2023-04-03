@@ -1,16 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:quiz_bebras/const/colors.dart';
 import 'package:quiz_bebras/const/images.dart';
-import 'package:quiz_bebras/question_screen/level1.dart';
-import 'package:quiz_bebras/question_screen/level2.dart';
-import 'package:quiz_bebras/question_screen/level3.dart';
-import 'package:quiz_bebras/question_screen/level4.dart';
-import 'package:quiz_bebras/question_screen/level5.dart';
-import 'package:quiz_bebras/question_screen/level6.dart';
-import 'package:quiz_bebras/question_screen/level7.dart';
-import 'package:quiz_bebras/question_screen/level8.dart';
-import 'package:quiz_bebras/question_screen/level9.dart';
-import 'package:quiz_bebras/question_screen/level10.dart';
+import 'package:quiz_bebras/data/question1.dart';
+import 'package:quiz_bebras/data/question2.dart';
+import 'package:quiz_bebras/data/question3.dart';
+import 'package:quiz_bebras/data/question4.dart';
+import 'package:quiz_bebras/data/question5.dart';
+import 'package:quiz_bebras/data/question6.dart';
+import 'package:quiz_bebras/data/question7.dart';
+import 'package:quiz_bebras/data/question8.dart';
+import 'package:quiz_bebras/data/question9.dart';
+import 'package:quiz_bebras/data/question10.dart';
+import 'package:quiz_bebras/question_screen/quiz_screen.dart';
 import 'package:quiz_bebras/const/text_style.dart';
 
 class level extends StatelessWidget {
@@ -31,8 +32,10 @@ class level extends StatelessWidget {
           alignment: Alignment.center,
           child: GestureDetector(
             onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => const quiz()));
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => quizScreen(questions1)));
             },
             child: Container(
               alignment: Alignment.center,
@@ -50,8 +53,10 @@ class level extends StatelessWidget {
           alignment: Alignment.center,
           child: GestureDetector(
             onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => const quiz2()));
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => quizScreen(questions2)));
             },
             child: Container(
               alignment: Alignment.center,
@@ -69,8 +74,10 @@ class level extends StatelessWidget {
           alignment: Alignment.center,
           child: GestureDetector(
             onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => const quiz3()));
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => quizScreen(questions3)));
             },
             child: Container(
               alignment: Alignment.center,
@@ -88,8 +95,10 @@ class level extends StatelessWidget {
           alignment: Alignment.center,
           child: GestureDetector(
             onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => const quiz4()));
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => quizScreen(questions4)));
             },
             child: Container(
               alignment: Alignment.center,
@@ -107,8 +116,10 @@ class level extends StatelessWidget {
           alignment: Alignment.center,
           child: GestureDetector(
             onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => const quiz5()));
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => quizScreen(questions5)));
             },
             child: Container(
               alignment: Alignment.center,
@@ -126,8 +137,10 @@ class level extends StatelessWidget {
           alignment: Alignment.center,
           child: GestureDetector(
             onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => const quiz6()));
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => quizScreen(questions6)));
             },
             child: Container(
               alignment: Alignment.center,
@@ -145,8 +158,10 @@ class level extends StatelessWidget {
           alignment: Alignment.center,
           child: GestureDetector(
             onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => const quiz7()));
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => quizScreen(questions7)));
             },
             child: Container(
               alignment: Alignment.center,
@@ -164,8 +179,10 @@ class level extends StatelessWidget {
           alignment: Alignment.center,
           child: GestureDetector(
             onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => const quiz8()));
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => quizScreen(questions8)));
             },
             child: Container(
               alignment: Alignment.center,
@@ -183,8 +200,10 @@ class level extends StatelessWidget {
           alignment: Alignment.center,
           child: GestureDetector(
             onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => const quiz9()));
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => quizScreen(questions9)));
             },
             child: Container(
               alignment: Alignment.center,
@@ -202,8 +221,10 @@ class level extends StatelessWidget {
           alignment: Alignment.center,
           child: GestureDetector(
             onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => const quiz10()));
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => quizScreen(questions10)));
             },
             child: Container(
               alignment: Alignment.center,

@@ -1,16 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:quiz_bebras/const/colors.dart';
-import 'package:quiz_bebras/data/question9.dart';
 import 'package:quiz_bebras/result.dart';
+import 'package:quiz_bebras/models/question.dart';
 
-class quiz9 extends StatefulWidget {
-  const quiz9({Key? key}) : super(key: key);
+class quizScreen extends StatefulWidget {
+  List<Question> questions;
+  quizScreen(this.questions, {Key? key}) : super(key: key);
 
   @override
-  State<quiz9> createState() => _quiz9State();
+  State<quizScreen> createState() => _quizScreenState();
 }
 
-class _quiz9State extends State<quiz9> {
+class _quizScreenState extends State<quizScreen> {
   int question_pos = 0;
   int score = 0;
   bool btnPressed = false;
@@ -33,7 +34,7 @@ class _quiz9State extends State<quiz9> {
           child: PageView.builder(
             controller: _controller!,
             onPageChanged: (page) {
-              if (page == questions.length - 1) {
+              if (page == widget.questions.length - 1) {
                 setState(() {
                   btnText = "See Results";
                 });
@@ -62,27 +63,56 @@ class _quiz9State extends State<quiz9> {
                   Divider(
                     color: Colors.white,
                   ),
-                  if (questions[index].img != "null")
+                  if (widget.questions[index].img != "null")
                     Image.asset(
-                      questions[index].img,
+                      widget.questions[index].img,
                       width: 250,
                       height: 200,
                     ),
-                  SizedBox(
-                    width: double.infinity,
-                    height: 190.0,
-                    child: Text(
-                      "${questions[index].question} ",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 16.0,
+                  if (widget.questions[index].question.length > 600 &&
+                      widget.questions[index].img != "null")
+                    SizedBox(
+                      width: double.infinity,
+                      height: 270.0,
+                      child: Text(
+                        "${widget.questions[index].question} ",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 15.0,
+                        ),
+                      ),
+                    )
+                  else if (widget.questions[index].question.length > 600 &&
+                      widget.questions[index].img != "null")
+                    SizedBox(
+                      width: double.infinity,
+                      height: 300.0,
+                      child: Text(
+                        "${widget.questions[index].question} ",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 15.0,
+                        ),
                       ),
                     ),
-                  ),
-                  for (int i = 0; i < questions[index].answers!.length; i++)
+                  if (widget.questions[index].question.length <= 600)
+                    SizedBox(
+                      width: double.infinity,
+                      height: 220.0,
+                      child: Text(
+                        "${widget.questions[index].question} ",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 16.0,
+                        ),
+                      ),
+                    ),
+                  for (int i = 0;
+                      i < widget.questions[index].answers!.length;
+                      i++)
                     Container(
                       width: double.infinity,
-                      height: 50.0,
+                      height: 40.0,
                       margin: EdgeInsets.only(
                           bottom: 20.0, left: 12.0, right: 12.0),
                       child: RawMaterialButton(
@@ -90,15 +120,14 @@ class _quiz9State extends State<quiz9> {
                           borderRadius: BorderRadius.circular(8.0),
                         ),
                         fillColor: btnPressed
-                            ? questions[index].answers!.values.toList()[i]
+                            ? widget.questions[index].answers!.values
+                                    .toList()[i]
                                 ? Colors.green
                                 : Colors.red
                             : Color(0xFF117eeb),
                         onPressed: !answered
                             ? () {
-                                if (questions[index]
-                                    .answers!
-                                    .values
+                                if (widget.questions[index].answers!.values
                                     .toList()[i]) {
                                   score++;
                                   print("yes");
@@ -111,19 +140,21 @@ class _quiz9State extends State<quiz9> {
                                 });
                               }
                             : null,
-                        child: Text(questions[index].answers!.keys.toList()[i],
+                        child: Text(
+                            widget.questions[index].answers!.keys.toList()[i],
                             style: TextStyle(
                               color: Colors.white,
-                              fontSize: 18.0,
+                              fontSize: 15.0,
                             )),
                       ),
                     ),
                   SizedBox(
-                    height: 40.0,
+                    height: 5.0,
                   ),
                   RawMaterialButton(
                     onPressed: () {
-                      if (_controller!.page?.toInt() == questions.length - 1) {
+                      if (_controller!.page?.toInt() ==
+                          widget.questions.length - 1) {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
@@ -150,7 +181,7 @@ class _quiz9State extends State<quiz9> {
                 ],
               );
             },
-            itemCount: questions.length,
+            itemCount: widget.questions.length,
           )),
     );
   }

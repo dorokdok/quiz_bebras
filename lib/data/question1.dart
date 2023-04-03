@@ -1,6 +1,6 @@
 import 'package:quiz_bebras/models/question.dart';
 
-List<Question> questions = [
+List<Question> questions1 = [
   // Question(
   //   "How Many Whiskers does the average cat have on each side of its face ?",
   //   "assets/tes.png",
@@ -68,12 +68,10 @@ List<Question> questions = [
   // }),
 
   // SS73-74, 1
-  Question("Cows are natural herbivores, they usually drink ____.", 
-      "null", {
+  Question("Cows are natural herbivores, they usually drink ____.", "null", {
     "Milk": false,
     "Water": true,
     "Tea": false,
-    "Coca-cola":false,
+    "Coca-cola": false,
   }),
-  
 ];
