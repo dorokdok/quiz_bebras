@@ -11,19 +11,18 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         body: Container(
-      width: double.infinity,
-      height: double.infinity,
       decoration: const BoxDecoration(
-          gradient: LinearGradient(
-              begin: Alignment.topCenter,
-              end: Alignment.bottomCenter,
-              colors: [crimson, darkred])),
+          image: DecorationImage(image: AssetImage(bgmain), fit: BoxFit.cover)),
       child: Column(children: [
         const SizedBox(height: 100),
-        Image.asset(telu),
-        const SizedBox(height: 20),
-        headingText(text: "Quiz Latihan Bebras", size: 30, color: snow),
-        const SizedBox(height: 20),
+        Image.asset(
+          telu,
+          height: 300,
+          width: 300,
+        ),
+        const SizedBox(height: 50),
+        headingText(text: "Quiz Latihan Bebras", size: 30, color: black),
+        const SizedBox(height: 40),
         Align(
           alignment: Alignment.center,
           child: GestureDetector(
@@ -38,7 +37,7 @@ class Home extends StatelessWidget {
               decoration: BoxDecoration(
                   color: Color.fromRGBO(240, 128, 128, 100),
                   borderRadius: BorderRadius.circular(12)),
-              child: headingText(text: "Start", size: 18, color: snow),
+              child: headingText(text: "Play", size: 18, color: black),
             ),
           ),
         ),
