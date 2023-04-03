@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:quiz_bebras/const/colors.dart';
+import 'package:quiz_bebras/const/images.dart';
 import 'package:quiz_bebras/question_screen/level1.dart';
 import 'package:quiz_bebras/question_screen/level2.dart';
 import 'package:quiz_bebras/question_screen/level3.dart';
@@ -19,16 +20,13 @@ class level extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         body: Container(
-      width: double.infinity,
-      height: double.infinity,
       decoration: const BoxDecoration(
-          gradient: LinearGradient(
-              begin: Alignment.topCenter,
-              end: Alignment.bottomCenter,
-              colors: [crimson, darkred])),
+          image:
+              DecorationImage(image: AssetImage(bglevel), fit: BoxFit.cover)),
       child: Column(children: [
         const SizedBox(height: 70),
-        headingText(text: "Pilih Level", size: 30, color: snow),
+        headingText(text: "Pilih Level", size: 30, color: black),
+        const SizedBox(height: 10),
         Align(
           alignment: Alignment.center,
           child: GestureDetector(
@@ -43,7 +41,7 @@ class level extends StatelessWidget {
               decoration: BoxDecoration(
                   color: Color.fromRGBO(240, 128, 128, 100),
                   borderRadius: BorderRadius.circular(12)),
-              child: headingText(text: "Level 1", size: 18, color: snow),
+              child: headingText(text: "Level 1", size: 18, color: black),
             ),
           ),
         ),
@@ -62,7 +60,7 @@ class level extends StatelessWidget {
               decoration: BoxDecoration(
                   color: Color.fromRGBO(240, 128, 128, 100),
                   borderRadius: BorderRadius.circular(12)),
-              child: headingText(text: "Level 2", size: 18, color: snow),
+              child: headingText(text: "Level 2", size: 18, color: black),
             ),
           ),
         ),
@@ -81,7 +79,7 @@ class level extends StatelessWidget {
               decoration: BoxDecoration(
                   color: Color.fromRGBO(240, 128, 128, 100),
                   borderRadius: BorderRadius.circular(12)),
-              child: headingText(text: "Level 3", size: 18, color: snow),
+              child: headingText(text: "Level 3", size: 18, color: black),
             ),
           ),
         ),
@@ -100,7 +98,7 @@ class level extends StatelessWidget {
               decoration: BoxDecoration(
                   color: Color.fromRGBO(240, 128, 128, 100),
                   borderRadius: BorderRadius.circular(12)),
-              child: headingText(text: "Level 4", size: 18, color: snow),
+              child: headingText(text: "Level 4", size: 18, color: black),
             ),
           ),
         ),
@@ -119,7 +117,7 @@ class level extends StatelessWidget {
               decoration: BoxDecoration(
                   color: Color.fromRGBO(240, 128, 128, 100),
                   borderRadius: BorderRadius.circular(12)),
-              child: headingText(text: "Level 5", size: 18, color: snow),
+              child: headingText(text: "Level 5", size: 18, color: black),
             ),
           ),
         ),
@@ -138,7 +136,7 @@ class level extends StatelessWidget {
               decoration: BoxDecoration(
                   color: Color.fromRGBO(240, 128, 128, 100),
                   borderRadius: BorderRadius.circular(12)),
-              child: headingText(text: "Level 6", size: 18, color: snow),
+              child: headingText(text: "Level 6", size: 18, color: black),
             ),
           ),
         ),
@@ -157,7 +155,7 @@ class level extends StatelessWidget {
               decoration: BoxDecoration(
                   color: Color.fromRGBO(240, 128, 128, 100),
                   borderRadius: BorderRadius.circular(12)),
-              child: headingText(text: "Level 7", size: 18, color: snow),
+              child: headingText(text: "Level 7", size: 18, color: black),
             ),
           ),
         ),
@@ -176,7 +174,7 @@ class level extends StatelessWidget {
               decoration: BoxDecoration(
                   color: Color.fromRGBO(240, 128, 128, 100),
                   borderRadius: BorderRadius.circular(12)),
-              child: headingText(text: "Level 8", size: 18, color: snow),
+              child: headingText(text: "Level 8", size: 18, color: black),
             ),
           ),
         ),
@@ -195,7 +193,7 @@ class level extends StatelessWidget {
               decoration: BoxDecoration(
                   color: Color.fromRGBO(240, 128, 128, 100),
                   borderRadius: BorderRadius.circular(12)),
-              child: headingText(text: "Level 9", size: 18, color: snow),
+              child: headingText(text: "Level 9", size: 18, color: black),
             ),
           ),
         ),
@@ -214,7 +212,7 @@ class level extends StatelessWidget {
               decoration: BoxDecoration(
                   color: Color.fromRGBO(240, 128, 128, 100),
                   borderRadius: BorderRadius.circular(12)),
-              child: headingText(text: "Level 10", size: 18, color: snow),
+              child: headingText(text: "Level 10", size: 18, color: black),
             ),
           ),
         ),

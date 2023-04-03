@@ -22,7 +22,7 @@ class _ResultScreenState extends State<ResultScreen> {
           SizedBox(
             width: double.infinity,
             child: Text(
-              "Lorem Dorem",
+              "Selamat !",
               textAlign: TextAlign.center,
               selectionColor: Color(0xFF252c4a),
               style: TextStyle(
@@ -36,7 +36,7 @@ class _ResultScreenState extends State<ResultScreen> {
             height: 45.0,
           ),
           Text(
-            "Score: ",
+            "Nilai: ",
             style: TextStyle(color: Colors.white, fontSize: 34.0),
           ),
           SizedBox(
@@ -66,7 +66,7 @@ class _ResultScreenState extends State<ResultScreen> {
             //padding: EdgeInsets.all(18.0),
             child: Text(
               "Kembali ke Menu",
-              style: TextStyle(color: Colors.white),
+              style: TextStyle(color: Colors.white, fontSize: 25),
             ),
           ),
         ],
