@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:quiz_bebras/home.dart';
+import 'package:responsive_sizer/responsive_sizer.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,13 +11,11 @@ class MyApp extends StatelessWidget {
 
   // This widget is the root of your application.
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Quiz Bebras',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: Home(),
-    );
-  }
+  Widget build(BuildContext context) => ResponsiveSizer(
+        builder: (context, orientation, screenType) {
+          return MaterialApp(
+            home: Home(),
+          );
+        },
+      );
 }

@@ -67,43 +67,7 @@ List<Question> questions3 = [
   //   "Rocketonia": false,
   // }),
 
-  // SS75-78, 1
-  Question(
-      "Bob si berang-berang telah mengatur meja sarapan seperti yang ditunjukkin pada gambar, termasuk taplak meja(1), serbet(2), cangkir(3), pisau(4), dan piring(5).Dalam urutan apa dia meletakan benda-benda di atas meja?",
-      "assets/soal/SS75-78.png", {
-    "1-3-2-5-4": true,
-    "1-2-5-3-4": false,
-    "1-3-2-4-5": false,
-    "1-2-3-5-4": false,
-  }),
-  // SS84-85, 2
-  Question(
-      "Terdapat 12 tempat untuk parkir mobil di area parkir. Setiap tempat diberi nomor. Gambar di bawah ini menunjukkan kondisi area parkir pada hari Senin dan kondisi pada hari Selasa. Mobil yang parkir pada hari Senin maupun pada hari Selasa pasti akan parkir di tempat seperti pada di gambar. Pertanyaan: Berapa banyak tempat parkir yang tidak pernah terisi mobil pada hari Senin maupun hari Selasa?",
-      "assets/soal/SS84-85.png", {
-    "5": false,
-    "3": false,
-    "6": false,
-    "4": true,
-  }),
-  // SS98-99, 3
-  Question(
-      "Jeni si berang-berang cantik, pergi ke sekolah dengan berjalan kaki. Peta jalan yang dapat dilalui dari rumah ke sekolah adalah seperti pada gambar. Jeni senang menempuh jalur yang berbeda-beda setiap hari. Dia hanya berjalan sepanjang jalan yang tersedia seperti pada gambar. Jalan yang Jeni gunakan pasti selalu mengarah ke sekolah. Artinya Jeni tidak akan menggunakan jalan yang menjauhi sekolah. Pertanyaan: Ada berapa banyak jalur yang berbeda yang dapat ditempuh Jeni untuk pergi ke sekolah?",
-      "assets/soal/SS98-99.png", {
-    "2": false,
-    "1": false,
-    "4": false,
-    "3": true,
-  }),
-  // SS102-103, 4
-  Question(
-      "Beri si berang-berang dari Perancis sedang senang memakai kaos yang ada logo gambar dirinya. Dia ingin memakai warna yang berbeda-beda, berganti setiap hari, seperti warna pada bendera Perancis. Hari ini dia memakai kaos warna biru, besok akan memakai warna putih, dan lusa akan memakai warna merah. Pertanyaan: Pada hari ke-10, dia akan memakai warna apa?",
-      "assets/soal/SS102-103.png", {
-    "Putih": false,
-    "Biru": true,
-    "Merah": false,
-    "Merah dan Putih": false,
-  }),
-  // SS122-123, 5
+  // SS122-123, 1
   Question(
       "Ada banyak berang-berang yang ingin menggunakan kedua elevator ini. Namun tiap elevator hanya dapat mengangkat maksimal 30 kg. Pertanyaan: Berapa jumlah maksimal berang-berang yang dapat ditampung kedua lift dalam waktu bersamaan?",
       "assets/soal/SS122-123.png", {
@@ -111,5 +75,37 @@ List<Question> questions3 = [
     "8": true,
     "7": false,
     "6": false,
+  }),
+  Question(
+      "Beri si berang-berang membuat sebuah robot yang bergerak dengna aturan:\n1) Bergerak ke depan\n2)Jika bisa belok kiri makan belok kiri\nRobot berangkat dari kolam A. Di kolam mana robot akan berhenti?",
+      "assets/soal/228-229.png", {
+    "D": false,
+    "F": false,
+    "I": false,
+    "A": true,
+  }),
+  Question(
+      "Si Bebras dapat memutar roda ke kanan/kiri. Pada setiap sekali putaran, roda akan bergerak satu langkah menuju warna berikutnya.Perhatikan kondisi gambar\nJika si Bebras ingin memenangkan koin dari kondisi awal, berapa kali putaran roda paling sedikit yang dilakukan?",
+      "assets/soal/234-235.png", {
+    "5": false,
+    "4": true,
+    "3": false,
+    "6": false,
+  }),
+  Question(
+      "Bebras Joni ingin mengunjungi 4 kota di negaranya: Kota(1), Kota(2),Kota(3),Kota(4),Kota(5),Kota(6). Setiap kota dihubungkan dengan jalur bus 2 arah sebagai berikut:\nKota(3)-Kota(1)\nKota(1)-Kota(2)\nKota(6)-Kota(3)\nKota(5)-Kota(4)\nJika Joni memulai dari Kota(3), kota mana yang tidak dapat dikunjungi?",
+      "null", {
+    "Kota(6)": false,
+    "Kota(5)": true,
+    "Kota(2)": false,
+    "Kota(1)": false,
+  }),
+  Question(
+      "Seekor Landak ingin pergi ke bukit semut, ia harus mengumpulkan semut merah. Bantu landak tersebut untuk menemukan jalan dengan menyebutkan arahnya.\nPerintah mana yang harus diberikan kepada Landak tersebut?",
+      "assets/soal/160-161.png", {
+    "Kanan,Naik,Kanan,Turun,Kanan,Turun,Kanan": false,
+    "Kanan,Naik,Kanan,Turun,Kanan,Naik,Kanan": true,
+    "Kanan,Naik,Kanan,Turun,Kanan,Naik": false,
+    "Kanan,Naik,Kanan,Turun,Kiri,Naik,Kanan": false,
   }),
 ];
