@@ -1,72 +1,6 @@
 import 'package:quiz_bebras/models/question.dart';
 
 List<Question> questions3 = [
-  // Question(
-  //   "How Many Whiskers does the average cat have on each side of its face ?",
-  //   "assets/tes.png",
-  //   {"1": false, "3": false, "12": true, "5,007": false, "cek": false},
-  // ),
-  // Question("When does a cat purr ?", "null", {
-  //   "When it cares for its kittens": false,
-  //   "When it needs confort": false,
-  //   "When it feels content": false,
-  //   "All of the above": true,
-  // }),
-  // Question(
-  //     "What is the averge nulber of kittens in a litter ?", "assets/telu.png", {
-  //   "1 to 2": false,
-  //   "3 to 5": true,
-  //   "8 to 10": false,
-  //   "12 to 14": false,
-  // }),
-  // Question("How many moons does Mars have ?", "assets/telu.png", {
-  //   "1": false,
-  //   "2": false,
-  //   "4": true,
-  //   "8": false,
-  // }),
-  // Question("What is Mars's nickname ?", "assets/telu.png", {
-  //   "The red planet": true,
-  //   "The dusty planet": false,
-  //   "The hot planet": false,
-  //   "The smelly planet": false,
-  // }),
-  // Question(
-  //     "About How long would it take to travel to Mars ?", "assets/telu.png", {
-  //   "Three days": false,
-  //   "A month": false,
-  //   "Eight months": true,
-  //   "Two years": false,
-  // }),
-  // Question("Mars is Named after the Roman god Mars. What is he the god of ?",
-  //     "assets/telu.png", {
-  //   "Fire": false,
-  //   "Love": false,
-  //   "Agriculture": false,
-  //   "War": true,
-  // }),
-  // Question("Mars Is the ___ planet from the sun ?", "assets/telu.png", {
-  //   "Secon": false,
-  //   "Third": false,
-  //   "Fourth": true,
-  //   "Sixth": false,
-  // }),
-  // Question(
-  //     "Where did Orville and Wilbur Wright build their first flying airplane ?",
-  //     "assets/telu.png", {
-  //   "Paris, France": false,
-  //   "Boston, Massachusetts": false,
-  //   "Kitty Hawk, North Carolina": true,
-  //   "Tokyou, Japan": false,
-  // }),
-  // Question("The First astronuts to travel to space came from which country ?",
-  //     "assets/telu.png", {
-  //   "United States": false,
-  //   "Soviet Union (now Russia)": true,
-  //   "China": false,
-  //   "Rocketonia": false,
-  // }),
-
   // SS122-123, 1
   Question(
       "Ada banyak berang-berang yang ingin menggunakan kedua elevator ini. Namun tiap elevator hanya dapat mengangkat maksimal 30 kg. Pertanyaan: Berapa jumlah maksimal berang-berang yang dapat ditampung kedua lift dalam waktu bersamaan?",
@@ -107,5 +41,45 @@ List<Question> questions3 = [
     "Kanan,Naik,Kanan,Turun,Kanan,Naik,Kanan": true,
     "Kanan,Naik,Kanan,Turun,Kanan,Naik": false,
     "Kanan,Naik,Kanan,Turun,Kiri,Naik,Kanan": false,
+  }),
+  Question(
+      "Setelah sekolah, beberapa berang-berang bermain bersama. Agar tidak ada pereselisihan maka dilakukan pelemparan dadu dengan Aturan:\nJIKA lemparan pertama lebih besar dari lemparan kedua\nMAKA bermain di hutan\nSelainnya\n   JIKA Lemparan ketiga lebih kecil dari pertama MAKA bermain di sungai\n   Selainnya kita bermain di lapangan\nPertanyaan: Urutan dadu mana yang akan membuat mereka bermain di lapangan?",
+      "null", {
+    "3-3-2": false,
+    "3-3-3": true,
+    "2-4-1": false,
+    "5-3-1": false,
+  }),
+  Question(
+      "Jordan menebang pohon dan memotongnya sehingga setiap pohon menghasilkan batang kayu sepanjang 10 meter.\nAli ingin membangun bendungan dan membutuhkan kayu sepanjang 4 meter 7 buah, dan kayu sepanjang 3 meter 7 buah. Ali dapat memotong pohon dari batang yang sudah disediakan Jordan\nPertanyaan: Berapa banyak batang pohon minimal yang dapat dipakai Ali untuk membangun bendungan?",
+      "assets/soal/174-177.png", {
+    "7": false,
+    "5": false,
+    "6": true,
+    "8": false,
+  }),
+  Question(
+      "Untuk mengisi liburan selama 6 hari, Ana dan Bobi merencakan tinggal di desa nenek. Kebetulan di sana ada tiga petani yang membutuhkan bantuan untuk menggarap sawah. Masing-masing petani menawarkan Ana dan Bobi upah jika mau membantu dengan penawaran:\n- Petani A menawarkan 10 ribu rupiah untuk masing-masing setiap hari\n- Petani B menawarkan Bobi 10 ribu untuk hari pertama dan menaikkan 10 ribu setiap harinya(10 ribu, 20 ribu, 30 ribu ...). Sementara Ana akan menerima 100 ribu di hari pertamanya dan diturunkan 10 ribu setiap hari berikutnya(100 ribu, 90 ribu, 80 ribu...)\n- Petani C tidak berniat memberi upah Bobi, tetapi akan memberi ana 1 ribu rupiah dengan mengkali dua kan upah pada hari berikutnya(1 ribu, 2 ribu, 4 ribu, 8 ribu...)\nMereka berniat melewati hari liburnya di desa Nenek membantu petani. dan sepakat untuk membagi sama rata upah hasil kerja mereka\nPertanyaan: Kepada petani yang mana mereka akan mendapatkan upah paling banyak?",
+      "null", {
+    "A": false,
+    "C": false,
+    "B atau C": false,
+    "B": true,
+  }),
+  Question(
+      "Perhatikan gambar di atas\nPertanyaan: Dengan memperhatikan pola gerakannya, gambar mana yang cocok untuk gambar ke lime?",
+      "assets/soal/244-245.png", {
+    "b": false,
+    "a": true,
+    "c": false,
+    "d": false,
+  }),
+  Question(
+      "Jack menggulingkan dadu sepanjang jalan tanpa pengeseran, tiga kali ke arah depan dan dua kali ke kanan dan berhenti di lingkaran putih.\nPerhatikan gambar di atas dan ingat total angka satu sisi dengan sisi kebaliknnya adalah 7(1 berlawan dengan 6, 2 berlawanan dengan 5, 3 berlawanan dengan 4).\nPada mulanya, sisi dengan 1 titik(berlawanan dengan 6) ada di bawah, setelah memutar ke depan maka sisi yang ada di bawah merupakan titik 2.\nPertanyaan: Permukaan dengan angka berapa yang menghadap ke atas setelah sampai pada titik putih?",
+      "assets/soal/178-179.png", {
+    "6": false,
+    "5": true,
+    "1": false,
+    "2": false,
   }),
 ];
