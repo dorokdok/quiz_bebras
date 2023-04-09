@@ -103,11 +103,13 @@ List<Question> questions6 = [
     "B": false,
     "E": false,
   }),
-  Question("", "assets/soal/244-245.png", {
-    "b": false,
-    "a": true,
-    "c": false,
-    "d": false,
+  Question(
+      "Sebuah robot berjalan dengan aturan 'Selalu belok Kanan jika memungkinkan' seperti di gambar.\ndengan cara kerja seperti itu berapa banyak maze dari 4 maze pada gambar yang dapat diselesaikan oleh robot tersebut",
+      "assets/soal/172-173.png", {
+    "1": false,
+    "0": false,
+    "4": false,
+    "3": true,
   }),
   Question("", "assets/soal/244-245.png", {
     "b": false,
