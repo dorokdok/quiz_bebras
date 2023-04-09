@@ -140,11 +140,11 @@ List<Question> questions2 = [
     "Salah": true,
   }),
   Question(
-      "Ani, Beni, Carla, dan Dani mempunya pin merah dan putih. Dan setiap berang-berang mangatur 7 pin dalam satu bari dari kiri ke kanan dengan aturan:\n-Pin ketiga dari kiri harus berwarna merah\n-Jika pin berwarna merah, maka sebelah kanan pin harus pin merah\n Gambar diatas menunjukkan susunan keempatnya\nSiapa yang tidak mengikuti aturan?",
-      "assets/soal/216-217.png", {
-    "Ben": false,
-    "Ann": true,
-    "Charlie": false,
-    "Danny": true,
+      "Violeta ingin mengirin pesan ke Leo. Pesan dipecah menjadi potongan maksimal 3 huruf yang ditulis pada kartu bernomor urut. Untuk dapat mengerti Leo harus mengurutkan kartu sesuai nomor urut. Misalkan untuk mengirim DANCETIME, Violeta membuat 3 kartu seperti set A.\nSaat Leo menerima kartu seperti set B, apa pesan aslinya?",
+      "assets/soal/162-163.png", {
+    "GETSTICKYSHOCKS": false,
+    "STICKYGETHOOKS": false,
+    "KEYCKSHOGECGETSTI": false,
+    "GETHOCKEYSTICKS": true,
   }),
 ];

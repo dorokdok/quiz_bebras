@@ -11,6 +11,14 @@ List<Question> questions3 = [
     "6": false,
   }),
   Question(
+      "Ani, Beni, Carla, dan Dani mempunya pin merah dan putih. Dan setiap berang-berang mangatur 7 pin dalam satu bari dari kiri ke kanan dengan aturan:\n-Pin ketiga dari kiri harus berwarna merah\n-Jika pin berwarna merah, maka sebelah kanan pin harus pin merah\n Gambar diatas menunjukkan susunan keempatnya\nSiapa yang tidak mengikuti aturan?",
+      "assets/soal/216-217.png", {
+    "Ben": false,
+    "Ann": true,
+    "Charlie": false,
+    "Danny": true,
+  }),
+  Question(
       "Beri si berang-berang membuat sebuah robot yang bergerak dengna aturan:\n1) Bergerak ke depan\n2)Jika bisa belok kiri makan belok kiri\nRobot berangkat dari kolam A. Di kolam mana robot akan berhenti?",
       "assets/soal/228-229.png", {
     "D": false,
@@ -73,13 +81,5 @@ List<Question> questions3 = [
     "a": true,
     "c": false,
     "d": false,
-  }),
-  Question(
-      "Jack menggulingkan dadu sepanjang jalan tanpa pengeseran, tiga kali ke arah depan dan dua kali ke kanan dan berhenti di lingkaran putih.\nPerhatikan gambar di atas dan ingat total angka satu sisi dengan sisi kebaliknnya adalah 7(1 berlawan dengan 6, 2 berlawanan dengan 5, 3 berlawanan dengan 4).\nPada mulanya, sisi dengan 1 titik(berlawanan dengan 6) ada di bawah, setelah memutar ke depan maka sisi yang ada di bawah merupakan titik 2.\nPertanyaan: Permukaan dengan angka berapa yang menghadap ke atas setelah sampai pada titik putih?",
-      "assets/soal/178-179.png", {
-    "6": false,
-    "5": true,
-    "1": false,
-    "2": false,
   }),
 ];

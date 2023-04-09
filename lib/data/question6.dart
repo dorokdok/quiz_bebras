@@ -94,4 +94,49 @@ List<Question> questions6 = [
     "3": false,
     "5": false,
   }),
+  Question(
+      "Betaro si Berang-berang membuat lima ramuan ajaib yaitu:\n\nDapat membuat telinga lebih panjang\nDapat membuat gigi lebih panjang\nDapat membuat kumis kritis\nDapat mengubah hidung menjadi putih\nDan dapat mengubah warna menjadi putih\nBetaro memasukkan setiap ramuan ajaib ke dalam gelas dengan label huruf. Dia memasukkan di salah satu gelasnya air murni sehingga ada gelas sebanyak 6 buah dengan label A-F.Masalahnya dia lupa gelas label mana yang berisi air biasa.\nUntuk mengetahui ramuan apa saja yang ada di masing-masing gelas. Dilakukan eksperimen sebagai berikut:\n1. Gelas A-C diminum dan efeknya pada gambar 1\n2.Gelas A,D,F diminum dan efeknya pada gambar 2\n3.Gelas C,D,F dan efeknya pada gambar 3\n\nGelas mana yang mengandung air biasa?",
+      "assets/soal/168-169.png", {
+    "A": false,
+    "D": true,
+    "C": false,
+    "B": false,
+    "E": false,
+  }),
+  Question("", "assets/soal/244-245.png", {
+    "b": false,
+    "a": true,
+    "c": false,
+    "d": false,
+  }),
+  Question("", "assets/soal/244-245.png", {
+    "b": false,
+    "a": true,
+    "c": false,
+    "d": false,
+  }),
+  Question("", "assets/soal/244-245.png", {
+    "b": false,
+    "a": true,
+    "c": false,
+    "d": false,
+  }),
+  Question("", "assets/soal/244-245.png", {
+    "b": false,
+    "a": true,
+    "c": false,
+    "d": false,
+  }),
+  Question("", "assets/soal/244-245.png", {
+    "b": false,
+    "a": true,
+    "c": false,
+    "d": false,
+  }),
+  Question("", "assets/soal/244-245.png", {
+    "b": false,
+    "a": true,
+    "c": false,
+    "d": false,
+  }),
 ];

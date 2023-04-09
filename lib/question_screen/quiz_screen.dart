@@ -71,50 +71,22 @@ class _quizScreenState extends State<quizScreen> {
                           width: 100.w,
                           height: 25.h,
                         ),
-                      if (widget.questions[index].question.length > 600 &&
-                          widget.questions[index].img != "null")
-                        SizedBox(
-                            width: double.infinity,
-                            height: 27.h,
-                            child: SingleChildScrollView(
-                              scrollDirection: Axis.vertical,
-                              child: Text(
-                                "${widget.questions[index].question} ",
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 15.5.sp,
-                                ),
+                      SizedBox(
+                          width: double.infinity,
+                          height: 27.h,
+                          child: SingleChildScrollView(
+                            scrollDirection: Axis.vertical,
+                            child: Text(
+                              "${widget.questions[index].question} ",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 16.5.sp,
                               ),
-                            ))
-                      else if (widget.questions[index].question.length > 600 &&
-                          widget.questions[index].img == "null")
-                        SizedBox(
-                            width: double.infinity,
-                            height: 27.h,
-                            child: SingleChildScrollView(
-                              scrollDirection: Axis.vertical,
-                              child: Text(
-                                "${widget.questions[index].question} ",
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 15.5.sp,
-                                ),
-                              ),
-                            )),
-                      if (widget.questions[index].question.length <= 600)
-                        SizedBox(
-                            width: double.infinity,
-                            height: 27.h,
-                            child: SingleChildScrollView(
-                              scrollDirection: Axis.vertical,
-                              child: Text(
-                                "${widget.questions[index].question} ",
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 16.5.sp,
-                                ),
-                              ),
-                            )),
+                            ),
+                          )),
+                      const SizedBox(
+                        height: 1,
+                      ),
                       for (int i = 0;
                           i < widget.questions[index].answers!.length;
                           i++)
