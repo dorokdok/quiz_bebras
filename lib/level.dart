@@ -29,6 +29,7 @@ class level extends StatelessWidget {
           child: Column(children: [
             const SizedBox(height: 70),
             headingText(text: "Pilih Level", size: 30, color: black),
+            //Button level 1
             const SizedBox(height: 10),
             Align(
               alignment: Alignment.center,
@@ -51,6 +52,7 @@ class level extends StatelessWidget {
                 ),
               ),
             ),
+            //Button level 2
             const SizedBox(height: 10),
             Align(
               alignment: Alignment.center,
@@ -73,6 +75,7 @@ class level extends StatelessWidget {
                 ),
               ),
             ),
+            //Button level 3
             const SizedBox(height: 10),
             Align(
               alignment: Alignment.center,
@@ -95,6 +98,7 @@ class level extends StatelessWidget {
                 ),
               ),
             ),
+            //Button level 4
             const SizedBox(height: 10),
             Align(
               alignment: Alignment.center,
@@ -117,6 +121,7 @@ class level extends StatelessWidget {
                 ),
               ),
             ),
+            //Button level 5
             const SizedBox(height: 10),
             Align(
               alignment: Alignment.center,
@@ -139,6 +144,7 @@ class level extends StatelessWidget {
                 ),
               ),
             ),
+            //Button level 6
             const SizedBox(height: 10),
             Align(
               alignment: Alignment.center,
@@ -161,6 +167,7 @@ class level extends StatelessWidget {
                 ),
               ),
             ),
+            //Button level 7
             const SizedBox(height: 10),
             Align(
               alignment: Alignment.center,
@@ -183,7 +190,8 @@ class level extends StatelessWidget {
                 ),
               ),
             ),
-            const SizedBox(height: 10),
+            //Button level 8
+            /*const SizedBox(height: 10),
             Align(
               alignment: Alignment.center,
               child: GestureDetector(
@@ -204,8 +212,9 @@ class level extends StatelessWidget {
                       headingText(text: "Level 8", size: 18.sp, color: black),
                 ),
               ),
-            ),
-            const SizedBox(height: 10),
+            ),*/
+            //Button level 9
+            /*const SizedBox(height: 10),
             Align(
               alignment: Alignment.center,
               child: GestureDetector(
@@ -226,8 +235,9 @@ class level extends StatelessWidget {
                       headingText(text: "Level 9", size: 18.sp, color: black),
                 ),
               ),
-            ),
-            const SizedBox(height: 10),
+            ),*/
+            //Button level 10
+            /*const SizedBox(height: 10),
             Align(
               alignment: Alignment.center,
               child: GestureDetector(
@@ -248,7 +258,7 @@ class level extends StatelessWidget {
                       headingText(text: "Level 10", size: 18.sp, color: black),
                 ),
               ),
-            ),
+            ),*/
           ]),
         ));
       });

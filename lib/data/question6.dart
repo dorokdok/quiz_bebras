@@ -111,23 +111,29 @@ List<Question> questions6 = [
     "4": false,
     "3": true,
   }),
-  Question("", "assets/soal/244-245.png", {
-    "b": false,
-    "a": true,
-    "c": false,
-    "d": false,
+  Question(
+      "Sebuah robot pengecat mula-mula mempunyai 4 kaleng masing-masing berisi cat merah (M), hijau (H), kuning (K) dan biru (B). la akan mengecat pagar si Bebras yang dibuat dari deretan papan dan akan mewarnai setiap papan dengan satu warna. Kemudian ia akan mewarnai papan berikutnya dengan warna yang berikutnya sesuai urutan merah, hijau, kuning, biru (M-H-K-B). Jika robot sudah mewarnai dengan warna terakhir, ia akan kembali memakai warna pertama. Jika salah satu kaleng catnya habis, robot akan melemparkan kaleng cat itu, dan terus mewarnai dengan kaleng-kaleng cat tersisa. Dan seterusnya, sehingga semua kaleng cat kosong, atau tersisa cat di satu kaleng karena dua papan berurutan tak boleh berwarna sama\nPada Awalnya, robot dilengkapi dengan 4 kaleng dengan warna dan isi:\n- Merah, cukup untuk 5 papan\n- Hijau, cukup untuk 3 papan\n- Kuning,cukup untuk 7 papan\n- Biru, Cukup untuk 2 papan\n\nBerapa papan yang dapat dicat oleh robot hingga berhenti?",
+      "assets/soal/232-233.png", {
+    "17": false,
+    "8": false,
+    "15": true,
+    "5": false,
   }),
-  Question("", "assets/soal/244-245.png", {
-    "b": false,
-    "a": true,
-    "c": false,
-    "d": false,
+  Question(
+      "Tiga-sebaris (Three-in-a-row) merupakan jenis permainan komputer yang sedang populer walaupun pemain hanya menukarnukarkan posisi pasangan batu permata. Bila setelah penukaran terdapat tiga atau lebih batu permata dengan bentuk yang sama berada berturut-turut secara vertikal atau horisontal maka batu-batu itu akan menghilang, Selanjutnya, setiap batu lainnya yang berada di atasnya akan jatuh mengisi ruang yang telah ditinggalkan. Setelah jatuh, proses yang sama (menghilang dan jatuh) berlanjut bila terjadi ada tiga batu atau lebih berurutan seperti tadi.\nTujuan akhir permainan adalah menghilangkan seluruh batu permata melalui sejumlah penukaran. Seperti di contoh\nBatu-batu manakah yang harus ditukar agar seluruh batu menghilang pada situasi permainan di pertanyaan?",
+      "assets/soal/240-241.png", {
+    "Bertanda 1": true,
+    "Bertanda 2": false,
+    "Bertanda 3": false,
+    "Bertanda 4": false,
   }),
-  Question("", "assets/soal/244-245.png", {
-    "b": false,
-    "a": true,
-    "c": false,
-    "d": false,
+  Question(
+      "Stella suka menggambar bintang. Ia merangcang sebuah sistem untuk menamai bintangnya menggunakan dua angka berdasarkan:\n1. Jumlah sudut bintang\n2. Jumlah sudut yang dilewati dari satu sudut yang ditarik ke sudut lainnya\nTerdapat 4 contoh seperti di gambar\nBagaimana Stella menamai bintang soal?",
+      "assets/soal/194-195.png", {
+    "10:5": false,
+    "10:4": true,
+    "10:8": false,
+    "10:6": false,
   }),
   Question("", "assets/soal/244-245.png", {
     "b": false,

@@ -88,7 +88,7 @@ class _quizScreenState extends State<quizScreen> {
                         height: 1,
                       ),
                       for (int i = 0;
-                          i < widget.questions[index].answers!.length;
+                          i < widget.questions[index].answers.length;
                           i++)
                         Container(
                           width: double.infinity,
@@ -100,14 +100,14 @@ class _quizScreenState extends State<quizScreen> {
                               borderRadius: BorderRadius.circular(8.0),
                             ),
                             fillColor: btnPressed
-                                ? widget.questions[index].answers!.values
+                                ? widget.questions[index].answers.values
                                         .toList()[i]
                                     ? Colors.green
                                     : Colors.red
                                 : Color(0xFF117eeb),
                             onPressed: !answered
                                 ? () {
-                                    if (widget.questions[index].answers!.values
+                                    if (widget.questions[index].answers.values
                                         .toList()[i]) {
                                       score++;
                                       print("yes");
@@ -121,7 +121,7 @@ class _quizScreenState extends State<quizScreen> {
                                   }
                                 : null,
                             child: Text(
-                                widget.questions[index].answers!.keys
+                                widget.questions[index].answers.keys
                                     .toList()[i],
                                 style: TextStyle(
                                   color: Colors.white,

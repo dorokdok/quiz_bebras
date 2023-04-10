@@ -66,14 +66,4 @@ List<Question> questions8 = [
   //   "China": false,
   //   "Rocketonia": false,
   // }),
-
-  //SS108-109, 1
-  Question(
-      "Beberapa bola menggelindingi lereng. Urutan bola berubah ketika mereka jatuh ke lubang. ketika sebuah bola mendatangi lubang, jika terdapat cukup ruang, bola akan jatuh. Jika tidak, bola akan melewati lubang tersebut. Sebuah pin di dasar lubang bisa ditarik untuk mengeluarkan bola-bola didalamnya. Pertanyaan: Sepuluh bola bergelinding seperti pada gambar. Terdapat lubang A, B, dan C yang memiliki ruang kosong cukup untuk bola 3, 2, dan 1. Urutan pin ditarik adalah A, B, C, tetapi hanya ketika smeua bola sudah berhenti menggelinding. Yang manakah hasil akhirnya? (Gambar pertama dari kiri)",
-      "assets/soal/SS108-109.png", {
-    "7,8,9,10,1,2,3,5,4,6": false,
-    "10,9,8,7,6,5,4,3,2,1": false,
-    "7,8,9,10,1,2,3,4,5,6": false,
-    "7,8,9,10,3,2,1,5,4,6": true,
-  }),
 ];
