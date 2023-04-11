@@ -101,7 +101,6 @@ List<Question> questions6 = [
     "D": true,
     "C": false,
     "B": false,
-    "E": false,
   }),
   Question(
       "Sebuah robot berjalan dengan aturan 'Selalu belok Kanan jika memungkinkan' seperti di gambar.\ndengan cara kerja seperti itu berapa banyak maze dari 4 maze pada gambar yang dapat diselesaikan oleh robot tersebut",
