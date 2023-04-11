@@ -160,4 +160,12 @@ List<Question> questions7 = [
     "2": false,
     "3": false,
   }),
+  Question(
+      "Jane sedang bermain suatu permainan komputer. Secara rahasia komputer memilih warna-warna untuk lima kuntum bunga. Warna pilihan yang tersedia adalah biru, oranye, dan pink. Pilihan warna-warna itu tidak berubah selama satu permainan. Jane harus menebak warna-warna itu. Lalu Jane menebaknya dan oleh komputer kuntum-kuntuk yang warnanya berhasil ditebak segera ditampilkan mengembang, dan yang belum berhasil ditebak tetap ditampilkan sebagai kuntum, seperti terlihat pada gambar.\nWarna-warna apakah yang telah dipilih komputer untuk kuntum-kuntum bunga tersebut?",
+      "assets/soal/248-249.png", {
+    "biru, pink, biru, oranye, oranye": false,
+    "pink, biru, biru, pink, oranye": true,
+    "pink, pink, biru, pink, oranye": false,
+    "pink, biru, biru, oranye, oranye": false,
+  }),
 ];

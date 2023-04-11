@@ -135,16 +135,28 @@ List<Question> questions6 = [
     "10:8": false,
     "10:6": false,
   }),
-  Question("", "assets/soal/244-245.png", {
-    "b": false,
-    "a": true,
-    "c": false,
-    "d": false,
+  Question(
+      "Agen-agen rahasia Boris dan Berta saling berkomunikasi dengan menggunakan pesan rahasia. Boris ingin mengirim pesan rahasia kepada Berta yang isinya:\nMEETBILLYBEAVERAT6\nBoris menuliskan setiap karakter pesannya pada grid dengan 4 kolom dimulai dari kiri ke kanan dan dilakukan baris demi baris dimulai dari atas. Boris akan menuliskan karakter X pada tempat di grid yang tidak terpakai. Hasil penulisan pesan boris dapat dilihat pada gambar dibawah.\nSelanjutnya, Boris akan membuat pesan rahasia dengan cara menuliskan karakter yang ada di grid mulai dari atas ke bawah dan dilakukan secara kolom demi kolom dimulai dari kolom yang paling kiri, sehingga pesan rahasianya adalah:\nMBYVTEIBE6ELERXTLAAX\nBerta membalas pesan Boris dengan cara yang sama. Pesan rahasia yang dikirim Berta kepada Boris adalah:\nOIERKLTEILH!WBE\nApakah isi pesan yang ingin dikirimkan Berta kepada Boris?", 
+      "assets/soal/210-213.png", {
+    "WILLYOUBETHERETOO?": false,
+    "OKIWILLMEETHIM!": false,
+    "OKWHERETOMEET!": false,
+    "OKIWILLBETHERE!": true,
   }),
-  Question("", "assets/soal/244-245.png", {
-    "b": false,
-    "a": true,
-    "c": false,
-    "d": false,
+  Question(
+      "Bert si berang-berang memiliki kertas panjang berwarna-warni untuk sebuah pesta. Warna-warna tersebut adalah warna kuning(Y), merah(R), dan biru(B) yang tersusun dalam sebuah pola. Teman Bert, James, telah memotong beberapa bagian kertasnya seperti gambar di bawah.\nJames bilang dia akan mengembalikan potongan-potongan kertasnya jika Bert dapat menebak ukuran potongan kertas yang hilang.\nBerapa banyak kotak berwarna yang dimiliki selembar kertas yang hilang? ", 
+      "assets/soal/214-215.png", {
+    "32": false,
+    "33": false,
+    "31": true,
+    "34": false,
+  }),
+  Question(
+      "Bola Bebras adalah mainan yang dapat dioperasikan dengan pengendali jauh (remote control), dan dapat mengenali setiap perintah untuk bergerak satu kotak ke empat arah. Perintah-perintah E ke kanan, W ke kiri, N ke belakang, dan S ke depan. Bila Bola Bebras bergerak ke kotak putih, ia akan jatuh ke satu tingkat(level). Bola Bebras akan mengabaikan setiap perintah untuk berpindah ke luar batas.\n\nLihat pada posisi awal Bola Bebras dalam gambar. Rangkaian perintah manakah yang menyebabkan Bola Bebras mencapai posisi petak merah yang ditandai GOAL?", 
+      "assets/soal/230-231.png", {
+    "E, W, N, W": true,
+    "E, N, W, S, N, E, W": false,
+    "E, W, N, E, S, W": false,
+    "E, W, E, N, S, W": false,
   }),
 ];
