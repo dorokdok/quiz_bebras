@@ -102,7 +102,7 @@ List<Question> questions2 = [
     "2": false,
   }),
   Question(
-      "Jaka si berang-berang duduk dipinggir jalan dan menghitung warna mobil yang lewat. Terdapat 10 Mobil biru, 44 Mobil Merah, 3 Mobil Putih, 8 Mobil Hijau dan 15 Mobil Hitam. Jika angka yang diketikkan pada program menghasilkan diagram berikut. Warna mobil apa yang ditunjukkan pada diagram paling tengah?",
+      "Jaka si berang-berang duduk di pinggir jalan dan menghitung warna mobil yang lewat. Terdapat 10 Mobil biru, 44 Mobil Merah, 3 Mobil Putih, 8 Mobil Hijau dan 15 Mobil Hitam. Jika angka yang diketikkan pada program menghasilkan diagram berikut. Warna mobil apa yang ditunjukkan pada diagram paling tengah?",
       "assets/soal/196-197.png", {
     "Putih": false,
     "Biru": true,
@@ -134,7 +134,7 @@ List<Question> questions2 = [
     "Anna(Bola),Bruno(Tenis),Chris(Voli),dan Diana(basket)": true,
   }),
   Question(
-      "Kursi-kuris bioskop biasanya diberikan nomor.\nPada gambar di atas, penonton duduk pada nomor:\n1,1 1,3 1,6 2,2 2,5 2,6 3,2 4,3 4,1 4,2 4,5 4,7\nApakah penomorosan posisi duduk itu benar atau ada yang salah?",
+      "Kursi-kursi bioskop biasanya diberikan nomor.\nPada gambar di atas, penonton duduk pada nomor:\n1,1 1,3 1,6 2,2 2,5 2,6 3,2 4,3 4,1 4,2 4,5 4,7\nApakah penomoran posisi duduk itu benar atau ada yang salah?",
       "assets/soal/206-207.png", {
     "Benar": false,
     "Salah": true,

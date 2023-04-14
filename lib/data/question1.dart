@@ -77,7 +77,7 @@ List<Question> questions1 = [
 
   // SS75-78, 2
   Question(
-      "Bob si berang-berang telah mengatur meja sarapan seperti yang ditunjukkin pada gambar, termasuk taplak meja(1), serbet(2), cangkir(3), pisau(4), dan piring(5).Dalam urutan apa dia meletakan benda-benda di atas meja?",
+      "Bob si berang-berang telah mengatur meja sarapan seperti yang ditunjukkan pada gambar, termasuk taplak meja(1), serbet(2), cangkir(3), pisau(4), dan piring(5).Dalam urutan apa dia meletakan benda-benda di atas meja?",
       "assets/soal/SS75-78.png", {
     "1-3-2-5-4": true,
     "1-2-5-3-4": false,
@@ -117,7 +117,7 @@ List<Question> questions1 = [
 
   // SS170-171, 6
   Question(
-      "Pada gambar ini terdapat angka-angka dari 1-20. Akan tetapi, ada 4 angka yang hilang, angka apa saja yang tidak ada di gammbar?",
+      "Pada gambar ini terdapat angka-angka dari 1-20. Akan tetapi, ada 4 angka yang hilang, angka apa saja yang tidak ada di gambar?",
       "assets/soal/SS170-171.png", {
     "10, 11, 18, 19": true,
     "8, 10, 11, 19": false,
