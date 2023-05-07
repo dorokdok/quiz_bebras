@@ -3,16 +3,17 @@ import 'package:quiz_bebras/const/colors.dart';
 import 'package:quiz_bebras/result.dart';
 import 'package:quiz_bebras/models/question.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
+import 'dart:async';
 
-class quizScreen extends StatefulWidget {
+class testScreen extends StatefulWidget {
   List<Question> questions;
-  quizScreen(this.questions, {Key? key}) : super(key: key);
+  testScreen(this.questions, {Key? key}) : super(key: key);
 
   @override
-  State<quizScreen> createState() => _quizScreenState();
+  State<testScreen> createState() => _testScreenState();
 }
 
-class _quizScreenState extends State<quizScreen> {
+class _testScreenState extends State<testScreen> {
   int question_pos = 0;
   int score = 0;
   List<bool> btnPressed = [false, false, false, false];
@@ -22,12 +23,40 @@ class _quizScreenState extends State<quizScreen> {
   List<bool> answered = [];
   List<int> Qanswered = [];
   int pg = 0;
+  int _min = 0;
+  int _sec = 0;
+  Timer _timer = Timer.periodic(Duration(seconds: 1), (timer) {});
+
+  void _startTimer() {
+    _timer = Timer.periodic(Duration(seconds: 1), (timer) {
+      setState(() {
+        if (_min > 0 && _sec == 0) {
+          _min--;
+          _sec = 60;
+        }
+        _sec--;
+      });
+      if (_min == 0 && _sec == 0) {
+        _stopTimer();
+      }
+    });
+  }
+
+  void _stopTimer() {
+    if (_timer != null) {
+      _timer.cancel();
+      Navigator.push(context,
+          MaterialPageRoute(builder: (context) => ResultScreen(score)));
+    }
+  }
 
   @override
   void initState() {
     // TODO: implement initState
     super.initState();
     _controller = PageController(initialPage: 0);
+    _min = 3 * widget.questions.length;
+    _startTimer();
   }
 
   @override
@@ -64,7 +93,7 @@ class _quizScreenState extends State<quizScreen> {
                       SizedBox(
                         width: double.infinity,
                         child: Text(
-                          "Question ${index + 1}/${widget.questions.length}",
+                          "Question ${index + 1}/${widget.questions.length}                             $_min:$_sec",
                           textAlign: TextAlign.start,
                           style: TextStyle(
                             color: Colors.white,
@@ -158,21 +187,6 @@ class _quizScreenState extends State<quizScreen> {
                                 )),
                           ),
                         ),
-                      answered[index]
-                          ? Text(
-                              "Jawaban benar adalah ${widget.questions[index].answers.keys.firstWhere((k) => widget.questions[index].answers[k] == true)}",
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 15.sp,
-                              ))
-                          : Text("",
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 15.sp,
-                              )),
-                      SizedBox(
-                        height: 10,
-                      ),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.center,

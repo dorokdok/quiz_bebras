@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:quiz_bebras/const/colors.dart';
 import 'package:quiz_bebras/const/images.dart';
 import 'package:quiz_bebras/const/text_style.dart';
-import 'package:quiz_bebras/level.dart';
+import 'package:quiz_bebras/level/latihan.dart';
+import 'package:quiz_bebras/level/tes.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
 class Home extends StatelessWidget {
@@ -40,7 +41,28 @@ class Home extends StatelessWidget {
                   decoration: BoxDecoration(
                       color: Color.fromRGBO(240, 128, 128, 100),
                       borderRadius: BorderRadius.circular(12)),
-                  child: headingText(text: "Play", size: 18.sp, color: black),
+                  child:
+                      headingText(text: "Latihan", size: 18.sp, color: black),
+                ),
+              ),
+            ),
+            const SizedBox(height: 15),
+            Align(
+              alignment: Alignment.center,
+              child: GestureDetector(
+                onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => const test()));
+                },
+                child: Container(
+                  alignment: Alignment.center,
+                  width: 50.w,
+                  padding: const EdgeInsets.all(16),
+                  decoration: BoxDecoration(
+                      color: Color.fromRGBO(240, 128, 128, 100),
+                      borderRadius: BorderRadius.circular(12)),
+                  child: headingText(
+                      text: "Tes Kemampuan", size: 18.sp, color: black),
                 ),
               ),
             ),

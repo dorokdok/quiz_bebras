@@ -14,7 +14,7 @@ List<Question> questions3 = [
       "Ani, Beni, Carla, dan Dani mempunya pin merah dan putih. Dan setiap berang-berang mangatur 7 pin dalam satu bari dari kiri ke kanan dengan aturan:\n-Pin ketiga dari kiri harus berwarna merah\n-Jika pin berwarna merah, maka sebelah kanan pin harus pin merah\n Gambar diatas menunjukkan susunan keempatnya\nSiapa yang tidak mengikuti aturan?",
       "assets/soal/216-217.png", {
     "Ben": false,
-    "Ann": true,
+    "Ann": false,
     "Charlie": false,
     "Danny": true,
   }),
