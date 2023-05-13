@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:quiz_bebras/const/colors.dart';
 import 'package:quiz_bebras/result.dart';
-import 'package:quiz_bebras/models/questionv2.dart';
+import 'package:quiz_bebras/models/question.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
 class quizScreen extends StatefulWidget {
-  List<Questionv2> questions;
+  List<Question> questions;
   quizScreen(this.questions, {Key? key}) : super(key: key);
 
   @override
@@ -22,18 +22,18 @@ class _quizScreenState extends State<quizScreen> {
   List<bool> answered = [];
   List<int> Qanswered = [];
   int pg = 0;
+
   @override
   void initState() {
     // TODO: implement initState
     super.initState();
     _controller = PageController(initialPage: 0);
-    widget.questions.shuffle();
   }
 
   @override
   Widget build(BuildContext context) =>
       ResponsiveSizer(builder: (context, orientation, screenType) {
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < widget.questions.length; i++) {
           soal.add(btnPressed);
           answered.add(false);
         }
@@ -44,12 +44,12 @@ class _quizScreenState extends State<quizScreen> {
               child: PageView.builder(
                 controller: _controller!,
                 onPageChanged: (page) {
-                  if (page == 9) {
+                  if (page == widget.questions.length - 1) {
                     setState(() {
                       btnText = "See Results";
                       pg = page;
                     });
-                  } else if (page < 9) {
+                  } else if (page < widget.questions.length - 1) {
                     setState(() {
                       pg = page;
                     });
@@ -64,7 +64,7 @@ class _quizScreenState extends State<quizScreen> {
                       SizedBox(
                         width: double.infinity,
                         child: Text(
-                          "Question ${index + 1}/10",
+                          "Question ${index + 1}/${widget.questions.length}",
                           textAlign: TextAlign.start,
                           style: TextStyle(
                             color: Colors.white,
@@ -75,14 +75,12 @@ class _quizScreenState extends State<quizScreen> {
                       Divider(
                         color: Colors.white,
                       ),
-                      //Render Image
                       if (widget.questions[index].img != "null")
                         Image.asset(
                           widget.questions[index].img,
                           width: 100.w,
                           height: 25.h,
                         ),
-                      //Render Soal
                       SizedBox(
                           width: double.infinity,
                           height: 27.h,
@@ -99,7 +97,6 @@ class _quizScreenState extends State<quizScreen> {
                       const SizedBox(
                         height: 1,
                       ),
-                      //Render Jawaban
                       for (int i = 0;
                           i < widget.questions[index].answers.length;
                           i++)
@@ -176,7 +173,6 @@ class _quizScreenState extends State<quizScreen> {
                       SizedBox(
                         height: 10,
                       ),
-                      //Render Button Bawah
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.center,
@@ -200,24 +196,7 @@ class _quizScreenState extends State<quizScreen> {
                           SizedBox(
                             width: 10,
                           ),
-                          if (answered[index] == true)
-                            RawMaterialButton(
-                              onPressed: () {
-                                openDialog(widget.questions[index].penjelasan);
-                              },
-                              shape: StadiumBorder(),
-                              fillColor: Colors.blue,
-                              padding: EdgeInsets.all(15.0),
-                              elevation: 0.0,
-                              child: Text(
-                                "Hint",
-                                style: TextStyle(color: Colors.white),
-                              ),
-                            ),
-                          SizedBox(
-                            width: 10,
-                          ),
-                          if (pg != 9)
+                          if (pg != widget.questions.length - 1)
                             RawMaterialButton(
                               onPressed: () {
                                 _controller!.nextPage(
@@ -236,7 +215,8 @@ class _quizScreenState extends State<quizScreen> {
                           else
                             RawMaterialButton(
                               onPressed: () {
-                                if (_controller!.page?.toInt() == 9) {
+                                if (_controller!.page?.toInt() ==
+                                    widget.questions.length - 1) {
                                   Navigator.push(
                                       context,
                                       MaterialPageRoute(
@@ -266,21 +246,4 @@ class _quizScreenState extends State<quizScreen> {
               )),
         );
       });
-  Future openDialog(teks) => showDialog(
-      context: context,
-      builder: (context) => AlertDialog(
-            title: Text("Penjelasan"),
-            content: SizedBox(
-                width: double.infinity,
-                child: SingleChildScrollView(
-                  scrollDirection: Axis.vertical,
-                  child: Text(
-                    "${teks}",
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 16.5.sp,
-                    ),
-                  ),
-                )),
-          ));
 }
