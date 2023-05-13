@@ -54,8 +54,9 @@ class _testScreenState extends State<testScreen> {
   void initState() {
     // TODO: implement initState
     super.initState();
+    widget.questions.shuffle();
     _controller = PageController(initialPage: 0);
-    _min = 3 * widget.questions.length;
+    _min = 30;
     _startTimer();
   }
 
@@ -73,12 +74,12 @@ class _testScreenState extends State<testScreen> {
               child: PageView.builder(
                 controller: _controller!,
                 onPageChanged: (page) {
-                  if (page == widget.questions.length - 1) {
+                  if (page == 9) {
                     setState(() {
                       btnText = "See Results";
                       pg = page;
                     });
-                  } else if (page < widget.questions.length - 1) {
+                  } else if (page < 9) {
                     setState(() {
                       pg = page;
                     });
@@ -93,7 +94,7 @@ class _testScreenState extends State<testScreen> {
                       SizedBox(
                         width: double.infinity,
                         child: Text(
-                          "Question ${index + 1}/${widget.questions.length}                             $_min:$_sec",
+                          "Question ${index + 1}/10                             $_min:$_sec",
                           textAlign: TextAlign.start,
                           style: TextStyle(
                             color: Colors.white,
@@ -104,12 +105,14 @@ class _testScreenState extends State<testScreen> {
                       Divider(
                         color: Colors.white,
                       ),
+                      //Render Image
                       if (widget.questions[index].img != "null")
                         Image.asset(
                           widget.questions[index].img,
                           width: 100.w,
                           height: 25.h,
                         ),
+                      //Render Soal
                       SizedBox(
                           width: double.infinity,
                           height: 27.h,
@@ -124,8 +127,9 @@ class _testScreenState extends State<testScreen> {
                             ),
                           )),
                       const SizedBox(
-                        height: 1,
+                        height: 3,
                       ),
+                      //Render Option
                       for (int i = 0;
                           i < widget.questions[index].answers.length;
                           i++)
@@ -187,6 +191,7 @@ class _testScreenState extends State<testScreen> {
                                 )),
                           ),
                         ),
+                      //Render Row button bawah
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.center,
@@ -210,7 +215,7 @@ class _testScreenState extends State<testScreen> {
                           SizedBox(
                             width: 10,
                           ),
-                          if (pg != widget.questions.length - 1)
+                          if (pg != 9)
                             RawMaterialButton(
                               onPressed: () {
                                 _controller!.nextPage(
@@ -229,8 +234,7 @@ class _testScreenState extends State<testScreen> {
                           else
                             RawMaterialButton(
                               onPressed: () {
-                                if (_controller!.page?.toInt() ==
-                                    widget.questions.length - 1) {
+                                if (_controller!.page?.toInt() == 9) {
                                   Navigator.push(
                                       context,
                                       MaterialPageRoute(

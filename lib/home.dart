@@ -3,6 +3,7 @@ import 'package:quiz_bebras/const/colors.dart';
 import 'package:quiz_bebras/const/images.dart';
 import 'package:quiz_bebras/const/text_style.dart';
 import 'package:quiz_bebras/levelv2/latihan.dart';
+import 'package:quiz_bebras/levelv2/tes.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
 class Home extends StatelessWidget {
@@ -51,7 +52,7 @@ class Home extends StatelessWidget {
               child: GestureDetector(
                 onTap: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => const level()));
+                      MaterialPageRoute(builder: (context) => const test()));
                 },
                 child: Container(
                   alignment: Alignment.center,

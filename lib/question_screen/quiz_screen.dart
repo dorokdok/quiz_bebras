@@ -97,7 +97,7 @@ class _quizScreenState extends State<quizScreen> {
                             ),
                           )),
                       const SizedBox(
-                        height: 1,
+                        height: 3,
                       ),
                       //Render Jawaban
                       for (int i = 0;
@@ -203,7 +203,8 @@ class _quizScreenState extends State<quizScreen> {
                           if (answered[index] == true)
                             RawMaterialButton(
                               onPressed: () {
-                                openDialog(widget.questions[index].penjelasan);
+                                openDialog(widget.questions[index].penjelasan,
+                                    widget.questions[index].imgP);
                               },
                               shape: StadiumBorder(),
                               fillColor: Colors.blue,
@@ -266,21 +267,30 @@ class _quizScreenState extends State<quizScreen> {
               )),
         );
       });
-  Future openDialog(teks) => showDialog(
+  Future openDialog(teks, img) => showDialog(
       context: context,
       builder: (context) => AlertDialog(
-            title: Text("Penjelasan"),
-            content: SizedBox(
-                width: double.infinity,
-                child: SingleChildScrollView(
-                  scrollDirection: Axis.vertical,
-                  child: Text(
-                    "${teks}",
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 16.5.sp,
+          title: Text("Penjelasan"),
+          content: Column(
+            children: <Widget>[
+              if (img != "null")
+                Image.asset(
+                  img,
+                  width: 50.w,
+                  height: 12.5.h,
+                ),
+              SizedBox(
+                  width: double.infinity,
+                  child: SingleChildScrollView(
+                    scrollDirection: Axis.vertical,
+                    child: Text(
+                      "${teks}",
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 16.5.sp,
+                      ),
                     ),
-                  ),
-                )),
-          ));
+                  ))
+            ],
+          )));
 }
