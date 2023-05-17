@@ -97,7 +97,7 @@ class _quizScreenState extends State<quizScreen> {
                             ),
                           )),
                       const SizedBox(
-                        height: 3,
+                        height: 1.5,
                       ),
                       //Render Jawaban
                       for (int i = 0;
@@ -161,6 +161,7 @@ class _quizScreenState extends State<quizScreen> {
                                 )),
                           ),
                         ),
+                      //Render jawaban benar
                       answered[index]
                           ? Text(
                               "Jawaban benar adalah ${widget.questions[index].answers.keys.firstWhere((k) => widget.questions[index].answers[k] == true)}",
@@ -174,7 +175,7 @@ class _quizScreenState extends State<quizScreen> {
                                 fontSize: 15.sp,
                               )),
                       SizedBox(
-                        height: 10,
+                        height: 5,
                       ),
                       //Render Button Bawah
                       Row(
@@ -276,11 +277,12 @@ class _quizScreenState extends State<quizScreen> {
               if (img != "null")
                 Image.asset(
                   img,
-                  width: 50.w,
-                  height: 12.5.h,
+                  width: 100.w,
+                  height: 20.h,
                 ),
               SizedBox(
                   width: double.infinity,
+                  height: 50.h,
                   child: SingleChildScrollView(
                     scrollDirection: Axis.vertical,
                     child: Text(
@@ -290,7 +292,22 @@ class _quizScreenState extends State<quizScreen> {
                         fontSize: 16.5.sp,
                       ),
                     ),
-                  ))
+                  )),
+              Align(
+                  alignment: Alignment.bottomCenter,
+                  child: RawMaterialButton(
+                    onPressed: () {
+                      Navigator.pop(context);
+                    },
+                    shape: StadiumBorder(),
+                    fillColor: Colors.blue,
+                    padding: EdgeInsets.all(15.0),
+                    elevation: 0.0,
+                    child: Text(
+                      "Tutup",
+                      style: TextStyle(color: Colors.white),
+                    ),
+                  )),
             ],
           )));
 }

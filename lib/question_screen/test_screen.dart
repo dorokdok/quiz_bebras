@@ -127,7 +127,7 @@ class _testScreenState extends State<testScreen> {
                             ),
                           )),
                       const SizedBox(
-                        height: 3,
+                        height: 1.5,
                       ),
                       //Render Option
                       for (int i = 0;

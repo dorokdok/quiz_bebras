@@ -53,7 +53,7 @@ class test extends StatelessWidget {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => testScreen(questionssd)));
+                          builder: (context) => testScreen(questionssmp)));
                 },
                 child: Container(
                   alignment: Alignment.center,
