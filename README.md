@@ -31,7 +31,8 @@ Questionv2(
       "String Soal",
       "assets/soalv2/namafile.png(isi string "null" jika tidak ada)",
       {
-        "a": true,
+      //true jika menjadi option yang benar false jika option yang salah
+        "a": true, 
         "b": false,
         "c": false,
         "d": false,
