@@ -29,7 +29,7 @@ Untuk mengubah durasi soal yang ditampilkan pada tes kemampuan setiap tingkatan 
 ```bash
 Questionv2(
       "String Soal",
-      "assets/soalv2/namafile.png(isi string null jika tidak ada)",
+      "assets/soalv2/namafile.png(isi string "null" jika tidak ada)",
       {
         "a": true,
         "b": false,
@@ -37,7 +37,7 @@ Questionv2(
         "d": false,
       },
       "String Penjelasan",
-      "assets/soalv2/namafile.png(isi stringnull jika tidak ada)"),
+      "assets/soalv2/namafile.png(isi string "null" jika tidak ada)"),
 ```
 <!---------------------------------- Tiap File --------------------------->
 ## File-file lain dan isinya
