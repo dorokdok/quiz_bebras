@@ -57,7 +57,7 @@ class _testScreenState extends State<testScreen> {
     super.initState();
     widget.questions.shuffle();
     _controller = PageController(initialPage: 0);
-    _min = 30;
+    _min = durasi * soalMax;
     _startTimer();
   }
 

@@ -16,17 +16,22 @@ class Home extends StatelessWidget {
             body: Container(
           decoration: const BoxDecoration(
               image: DecorationImage(
-                  image: AssetImage(bgmain), fit: BoxFit.cover)),
+                  //background image
+                  image: AssetImage(bgmain),
+                  fit: BoxFit.cover)),
           child: Column(children: [
             const SizedBox(height: 100),
+            //logo tel-u
             Image.asset(
               telu,
               height: 30.h,
               width: 150.w,
             ),
             const SizedBox(height: 50),
+            //heading text
             headingText(text: "Quiz Latihan Bebras", size: 20.sp, color: black),
             const SizedBox(height: 40),
+            //Render Button latihan
             Align(
               alignment: Alignment.center,
               child: GestureDetector(
@@ -47,6 +52,7 @@ class Home extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 15),
+            //Render Button tes kemampuan
             Align(
               alignment: Alignment.center,
               child: GestureDetector(

@@ -35,6 +35,7 @@ class _ResultScreenState extends State<ResultScreen> {
           SizedBox(
             height: 45.0,
           ),
+          //Render Nilai
           Text(
             "Nilai: ",
             style: TextStyle(color: Colors.white, fontSize: 34.0),
@@ -64,6 +65,7 @@ class _ResultScreenState extends State<ResultScreen> {
             //shape: StadiumBorder(),
             //color: Color(0xFF117eeb),
             //padding: EdgeInsets.all(18.0),
+            //Render back to menu
             child: Text(
               "Kembali ke Menu",
               style: TextStyle(color: Colors.white, fontSize: 25),
