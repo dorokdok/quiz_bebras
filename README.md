@@ -25,7 +25,7 @@ Untuk mengubah durasi soal yang ditampilkan pada tes kemampuan setiap tingkatan 
 ```
 - akses folder lib/datav2
 - pilih file dart sesuai tingkat yang ingin ditambahkan soalnya
-- Tambah code di bawah di dalam list yang terdapat di dalam file
+- Tambah code di bawah ke dalam list yang terdapat di dalam file tingkatan yang dipilih sebelumnya
 ```bash
 Questionv2(
       "String Soal",
