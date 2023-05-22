@@ -6,9 +6,11 @@
 
 <!---------------------------------- Jumlah Soal --------------------------->
 ## Mengubah jumlah soal
-Untuk mengubah jumlah soal yang ditampilkan pada setiap level dapat melakukan: 
+Untuk mengubah jumlah soal yang ditampilkan pada setiap level dapat melakukan:
+'''bash
 - akses lib/const/config.dart
 - Ganti nilai maxSoal dengan jumlah soal yang diinginkan
+'''
 ---
 <!---------------------------------- Menambahkan Soal --------------------------->
 ## Menambah soal
