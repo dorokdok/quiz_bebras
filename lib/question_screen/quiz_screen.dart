@@ -3,6 +3,7 @@ import 'package:quiz_bebras/const/colors.dart';
 import 'package:quiz_bebras/result.dart';
 import 'package:quiz_bebras/models/questionv2.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
+import 'package:quiz_bebras/const/config.dart';
 
 class quizScreen extends StatefulWidget {
   List<Questionv2> questions;
@@ -33,7 +34,7 @@ class _quizScreenState extends State<quizScreen> {
   @override
   Widget build(BuildContext context) =>
       ResponsiveSizer(builder: (context, orientation, screenType) {
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < soalMax - 1; i++) {
           soal.add(btnPressed);
           answered.add(false);
         }
@@ -44,12 +45,12 @@ class _quizScreenState extends State<quizScreen> {
               child: PageView.builder(
                 controller: _controller!,
                 onPageChanged: (page) {
-                  if (page == 9) {
+                  if (page == soalMax - 1) {
                     setState(() {
                       btnText = "See Results";
                       pg = page;
                     });
-                  } else if (page < 9) {
+                  } else if (page < soalMax - 1) {
                     setState(() {
                       pg = page;
                     });
@@ -219,7 +220,7 @@ class _quizScreenState extends State<quizScreen> {
                           SizedBox(
                             width: 10,
                           ),
-                          if (pg != 9)
+                          if (pg != soalMax - 1)
                             RawMaterialButton(
                               onPressed: () {
                                 _controller!.nextPage(
@@ -238,7 +239,7 @@ class _quizScreenState extends State<quizScreen> {
                           else
                             RawMaterialButton(
                               onPressed: () {
-                                if (_controller!.page?.toInt() == 9) {
+                                if (_controller!.page?.toInt() == soalMax - 1) {
                                   Navigator.push(
                                       context,
                                       MaterialPageRoute(
@@ -268,6 +269,7 @@ class _quizScreenState extends State<quizScreen> {
               )),
         );
       });
+  //Render hint dialog
   Future openDialog(teks, img) => showDialog(
       context: context,
       builder: (context) => AlertDialog(

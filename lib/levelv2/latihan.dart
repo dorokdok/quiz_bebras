@@ -22,7 +22,7 @@ class level extends StatelessWidget {
           child: Column(children: [
             const SizedBox(height: 70),
             headingText(text: "Pilih Level", size: 30, color: black),
-            //Button level 1
+            //Button level SD
             const SizedBox(height: 10),
             Align(
               alignment: Alignment.center,
@@ -44,7 +44,7 @@ class level extends StatelessWidget {
                 ),
               ),
             ),
-            //Button level 2
+            //Button level SMP
             const SizedBox(height: 10),
             Align(
               alignment: Alignment.center,
@@ -66,7 +66,7 @@ class level extends StatelessWidget {
                 ),
               ),
             ),
-            //Button level 3
+            //Button level SMA
             const SizedBox(height: 10),
             Align(
               alignment: Alignment.center,
