@@ -42,7 +42,7 @@ Questionv2(
 ```
 ## Contoh Output Model Soal
 <p align="center">
-  <img src="assets/soal-example.png" height=120>
+  <img src="assets/soal-example.png">
 </p>
 <!---------------------------------- Tiap File --------------------------->
 ## File-file lain dan isinya
