@@ -40,6 +40,14 @@ Questionv2(
       "String Penjelasan",
       "assets/soalv2/namafile.png(isi string "null" jika tidak ada)"),
 ```
+## Contoh Output Model Soal
+<p align="center">
+  <img src="assets/soal-example.png">
+</p>
+
+---
+
+
 <!---------------------------------- Tiap File --------------------------->
 ## File-file lain dan isinya
 - lib/main.dart sebagai main class merefer home.dart
