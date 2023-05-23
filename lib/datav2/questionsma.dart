@@ -58,7 +58,7 @@ List<Questionv2> questionssma = [
       "Jawaban yang benar: XX-02, XX-07, XX-09, XX-04, XX-05\n\n2018-04-09 Laura Ungureanu (Romania), lauungureanu@gmail.com\n2018-04-09 Corina Vint(Romania), corina.vint@yahoo.com",
       "assets/soalv2/sma-4-p.png"),
   Questionv2(
-      "Sekumpulan berang-berang sedang bermain “rantai kata” dalam bahasa Inggris. Salah satu berangberang memulai dengan mengucapkan sebuah kata. Berang-berang lainnya harus mengucapkan sebuah kata lain yang dimulai dengan huruf terakhir dari kata sebelumnya sampai tak ada kata yang dapat diucapkan. Permainan akan diulang lagi mulai dari sebuah kata lain, dan seterusnya. Sejujurnya, kelompok bermain tersebut belum mengenal banyak kata-kata bahasa Inggris, sehingga rantai kata yang dapat diucapkan terbatas kepada kata-kata seperti digambar\nBerapa banyak kata yang maksimum dapat disebutkan dalam sebuah permainan?",
+      "Sekumpulan berang-berang sedang bermain “rantai kata” dalam bahasa Inggris. Salah satu berang-berang memulai dengan mengucapkan sebuah kata. Berang-berang lainnya harus mengucapkan sebuah kata lain yang dimulai dengan huruf terakhir dari kata sebelumnya sampai tak ada kata yang dapat diucapkan. Permainan akan diulang lagi mulai dari sebuah kata lain, dan seterusnya. Sejujurnya, kelompok bermain tersebut belum mengenal banyak kata-kata bahasa Inggris, sehingga rantai kata yang dapat diucapkan terbatas kepada kata-kata seperti digambar\nBerapa banyak kata yang maksimum dapat disebutkan dalam sebuah permainan?",
       "assets/soalv2/sma-5.png",
       {
         "8": true,
@@ -77,7 +77,7 @@ List<Questionv2> questionssma = [
         "cinta": true,
         "fani": false,
       },
-      "ipsum",
+      "Perhatikan diagram di atas.\nDalam diagram ini penari diwakili oleh lingkaran. Dua lingkaran terhubung oleh sebuah garis ketika dua penari harus menari berpasangan. Aturan jadwal latihan digambarkan oleh garis di diagram ini. Perhatikan mulai dari sebuah lingkaran, kita dapat mengikuti garis dari lingkaran tersebut ke lingkaran lain sampai kita melacak setiap garis penghubung tepat satu kali.\nKarena saat melacak garis ini kita harus meninggalkan setiap lingkaran yang kita lewati, ini berarti bahwa setiap lingkaran harus memiliki garis penghubung dengan jumlah genap, kecuali yang pertama dan yang terakhir di jalur. Jadi, lingkaran pertama di jalan harus A atau F. Dengan kata lain, jadwal apa pun yang dipilih, pasangan penari pertama harus Ana atau Fani. Cinta adalah satu-satunya penari yang tidak memiliki pasangan dengan keduanya. Jadi dia tidak akan pernah bisa menjadi bagian dari pasangan pertama. Kalau kita perhatikan setiap garis, kita harus mengambil arah dari penari yang sudah ada di latihan sebelumnya ke penari yang akan berada di latihan berikutnya. Karena satu penari tidak akan menari tiga kali berturut-turut, setiap langkah di sebuah garis akan menuju ke suatu lingkaran yang berbeda dalam diagram. Garis penghubung dalam diagram berkorespondensi dengan satu pasang penari.\n\n2018-04-09 Veerle Fack (BE), veerle.fack@ugent.be",
       "assets/soalv2/sma-6-p.png"),
   Questionv2(
       "Terdapat lima kartu yang diletakkan berderet. Setiap kartu berisikan lambang hati dalam jumlahtertentu, dari kiri ke kanan secara berurutan adalah 16, 8, 4, 2, dan 1 hati. Di bagian bawah kartu terdapat tulisan angka 0 atau 1. Angka 1 dituliskan jika kartu diatasnya terbuka (dan terlihat gambar hatinya!). Angka 0 dituliskan jika kartu tertutup. Kartu-kartu dapat digunakan untuk membangkitkan kode-kode untuk angka-angka. Sebagai contoh, terdapat 9 gambar hati yang dapat terlihat pada gambar berikut ini, sehingga kode untuk angka 9 adalah 01001.\nTemukan kode untuk 26 gambar hati.",
@@ -88,8 +88,8 @@ List<Questionv2> questionssma = [
         "11100": false,
         "11010": true,
       },
-      "ipsum",
-      "Hati ditempatkan di kartu sehingga hanya ada satu hati pada kartu sebelah kanan, dan setiap kartu disebelah kiri sesudahnya mengandung dua kali hati. Maka, akan ada 1, 2, 4, 8, dan 16 hati saat dibaca dari kiri ke kanan.\nDapat dibuktikan bahwa setiap angka dari 0 s.d. 31 dapat direpresentasikan dengan kombinasi tertentumenggunakan kartu tsb. Kita juga dapat melakukan perhitungan dengan menggunakan kartu-kartu ini.\nPengaturan dari hati dipakai dalam sistem bilangan biner yang hanya menggunakan 0 dan 1, yang dipakai komputer untuk menyimpan informasi. Kita juga dapat mengkode teks, gambar, video, musik dengan hanya menggunakan bilangan 0 dan 1.\n\nSoal Bebras 2017"),
+      "Hati ditempatkan di kartu sehingga hanya ada satu hati pada kartu sebelah kanan, dan setiap kartu disebelah kiri sesudahnya mengandung dua kali hati. Maka, akan ada 1, 2, 4, 8, dan 16 hati saat dibaca dari kiri ke kanan.\nDapat dibuktikan bahwa setiap angka dari 0 s.d. 31 dapat direpresentasikan dengan kombinasi tertentumenggunakan kartu tsb. Kita juga dapat melakukan perhitungan dengan menggunakan kartu-kartu ini.\nPengaturan dari hati dipakai dalam sistem bilangan biner yang hanya menggunakan 0 dan 1, yang dipakai komputer untuk menyimpan informasi. Kita juga dapat mengkode teks, gambar, video, musik dengan hanya menggunakan bilangan 0 dan 1.\n\nSoal Bebras 2017",
+      "null"),
   Questionv2(
       "Berang-berang menciptakan sistem pengkodean kata yang disebut kode berang-berang, dengan memakai peta di atas:\n- Setiap pohon di taman diberi nama dengan satu huruf.\n- Kode untuk setiap huruf ditemukan dengan cara mencapai pohon tersebut dengan berbelok kiri (L)dan kanan (R).\n- Kode untuk setiap huruf selalu dimulai dari pintu masuk taman (bertanda panah).\nContoh-contoh :\n- Contoh 1: Kode untuk A adalah LL karena untuk mencapai pohon A dari pintu masuk taman kamu harus berbelok kiri dua kali.\n- Contoh 2: Kode untuk kata BAR adalah LRLLLR.\nBerapa banyak huruf dalam kode berang-berang tersebut untuk kata BEAR?",
       "assets/soalv2/sma-8.png",
@@ -122,5 +122,5 @@ List<Questionv2> questionssma = [
         "& & # & & # # &": true,
       },
       "Jawaban yang tepat adalah & & # & & # # &\nIlmuwan/Ahli informatika menyenangi bilangan biner {0, 1}, atau {off, on}. Satu digit biner merepresentasi dua keadaan. Untuk kasus ini, lampu “menyala” atau “mati”.\nAhli informatika seringkalimerepresentasi menjadi 1 dan 0, tetapi simbol lainnya juga dapat dipakai. Tergantung kepada orang yang menentukannya.\n\nSoal Bebras 2017",
-      "ipsum"),
+      "null"),
 ];
