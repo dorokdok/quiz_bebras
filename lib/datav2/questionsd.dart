@@ -3,7 +3,7 @@ import 'package:quiz_bebras/models/questionv2.dart';
 List<Questionv2> questionssd = [
   /*Questionv2(
       "Soal",
-      "assets/soalv2/namafile.png(isi string null jika tidak ada)",
+      "assets/soalv2/namafile.png(isi string "null" jika tidak ada)",
       {
         "a": true,
         "b": false,
@@ -11,7 +11,7 @@ List<Questionv2> questionssd = [
         "d": false,
       },
       "penjelasan",
-      "assets/soalv2/namafile.png(isi stringnull jika tidak ada)"),
+      "assets/soalv2/namafile.png(isi string "null" jika tidak ada)"),
   */
   Questionv2(
       "Dengan memperhatikan pola gerakan si Santi, gambar yang mana yang cocok untuk gerakan ke lima?",
