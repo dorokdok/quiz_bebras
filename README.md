@@ -44,6 +44,7 @@ Questionv2(
 <p align="center">
   <img src="assets/soal-example.png">
 </p>
+---
 <!---------------------------------- Tiap File --------------------------->
 ## File-file lain dan isinya
 - lib/main.dart sebagai main class merefer home.dart
