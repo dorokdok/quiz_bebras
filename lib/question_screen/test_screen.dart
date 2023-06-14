@@ -108,10 +108,16 @@ class _testScreenState extends State<testScreen> {
                       ),
                       //Render Image
                       if (widget.questions[index].img != "null")
-                        Image.asset(
-                          widget.questions[index].img,
-                          width: 100.w,
-                          height: 25.h,
+                        InteractiveViewer(
+                          boundaryMargin:
+                              EdgeInsets.all(20.0), // Margin untuk batas zoom
+                          minScale: 0.1, // Skala minimum
+                          maxScale: 4.0, // Skala maksimum
+                          child: Image.asset(
+                            widget.questions[index].img,
+                            width: 100.w,
+                            height: 25.h,
+                          ),
                         ),
                       //Render Soal
                       SizedBox(

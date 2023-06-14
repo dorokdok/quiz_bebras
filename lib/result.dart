@@ -11,6 +11,19 @@ class ResultScreen extends StatefulWidget {
 }
 
 class _ResultScreenState extends State<ResultScreen> {
+  String teks = "";
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    if (widget.score >= 8) {
+      teks = "Selamat";
+    } else if (widget.score < 8 && widget.score > 5) {
+      teks = "Jangan putus asa!";
+    } else {
+      teks = "Jangan patah semangat, ayo belajar!";
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -22,7 +35,7 @@ class _ResultScreenState extends State<ResultScreen> {
           SizedBox(
             width: double.infinity,
             child: Text(
-              "Selamat !",
+              teks,
               textAlign: TextAlign.center,
               selectionColor: Color(0xFF252c4a),
               style: TextStyle(
